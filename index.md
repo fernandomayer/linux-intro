@@ -3,7 +3,7 @@ title       : Teste com Slidify
 subtitle    : Slidyish
 author      : Fernando Mayer
 job         : ESALQ/USP
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+framework   : dzslides        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
@@ -42,8 +42,8 @@ rnorm(10)
 ```
 
 ```
-##  [1]  1.10332  0.02900  0.38720  0.27966  0.22139  0.65309 -0.36734
-##  [8]  0.27610  0.01297 -1.81879
+##  [1] -0.01076 -0.20613 -0.15967  1.99111  0.05595  0.59732 -0.38646
+##  [8] -0.17868  0.55412 -0.76364
 ```
 
 
