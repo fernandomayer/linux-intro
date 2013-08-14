@@ -1,6 +1,6 @@
 ---
-title       : Teste com Slidify
-subtitle    : Slidyish
+title       : Introdução ao Linux
+subtitle    : R, LaTeX e outros
 author      : Fernando Mayer
 job         : ESALQ/USP
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}

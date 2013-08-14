@@ -1,6 +1,6 @@
 ---
-title       : Teste com Slidify
-subtitle    : Slidyish
+title       : Introdução ao Linux
+subtitle    : R, LaTeX e outros
 author      : Fernando Mayer
 job         : ESALQ/USP
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -42,8 +42,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -0.29132  0.91905  0.48621 -0.89419  0.39716  2.02803 -1.33419
-##  [8]  0.13391 -0.12700  0.00609
+##  [1] -0.75153  2.26422 -0.57461 -1.61532 -1.38158  0.06895 -0.81106
+##  [8]  0.07337 -1.15045  0.14014
 ```
 
 
