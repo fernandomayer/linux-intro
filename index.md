@@ -13,6 +13,12 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
+## Slide 0
+
+### Projeto GNU
+
+![](assets/img/GNU.png)
+
 ## Slide 1
 
 Como fazer um block
@@ -50,8 +56,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -1.1228 -1.1417  0.5534  2.0274  0.7212 -1.3221  0.4199 -0.8906
-##  [9] -0.5652 -0.1298
+##  [1] -0.8978 -0.1071 -0.6974 -1.0325  0.6677 -1.5850 -0.4179  1.0250
+##  [9] -0.4768  0.8844
 ```
 
 

@@ -13,6 +13,12 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
+## Slide 0
+
+### Projeto GNU
+
+![](assets/img/GNU.png)
+
 ## Slide 1
 
 Como fazer um block
