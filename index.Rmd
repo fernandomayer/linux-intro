@@ -53,6 +53,11 @@ Mais um teste com block
 ls
 ```
 
+Comandos úteis no terminal:
+* `ls` para listar arquivos
+* `cd` para mudar diretórios
+
+
 
 
 
