@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 assets      :
-  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
 ---
 
 ## Slide 1

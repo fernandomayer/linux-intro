@@ -9,7 +9,7 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 assets      :
-  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
 ---
 
 ## Slide 1
@@ -44,8 +44,8 @@ rnorm(10)
 ```
 
 ```
-##  [1]  0.7671  1.1444  0.3827 -1.9782 -0.1461  0.3739 -0.3379  0.6608
-##  [9] -0.1512  1.0889
+##  [1] -1.75396 -0.94091 -0.61929  1.29606  0.59199  0.07463 -1.62209
+##  [8] -0.69435  1.26797  0.47056
 ```
 
 
