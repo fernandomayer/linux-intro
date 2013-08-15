@@ -47,7 +47,8 @@ rnorm(10)
 ## Slide 5
 
 Mais um teste com block
-	> Bloco de texto
+
+> Bloco de texto
 
 ```
 ls
