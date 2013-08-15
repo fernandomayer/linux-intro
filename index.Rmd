@@ -17,8 +17,10 @@ assets      :
 
 ### Projeto GNU
 
-<img src="assets/img/GNU.png" style="float:right" height="400px" width="300px" />
+<img src="assets/img/GNU.png" style="float:center" height="80%" />
 <!-- <center>![](assets/img/GNU.png)</center> -->
+
+---
 
 ## Slide 1
 
