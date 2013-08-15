@@ -8,6 +8,8 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
+assets      :
+  css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
 ## Slide 1
@@ -42,8 +44,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -0.75153  2.26422 -0.57461 -1.61532 -1.38158  0.06895 -0.81106
-##  [8]  0.07337 -1.15045  0.14014
+##  [1]  0.74184 -0.11657 -0.61961  1.08834 -0.32967  0.15642  0.78133
+##  [8]  0.03313 -1.20386  1.69798
 ```
 
 
