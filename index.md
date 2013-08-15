@@ -17,7 +17,7 @@ assets      :
 
 ### Projeto GNU
 
-<img src="assets/img/GNU.png" height="400px" width="300px" />
+<img src="assets/img/GNU.png" style="float:right" height="400px" width="300px" />
 <!-- <center>![](assets/img/GNU.png)</center> -->
 
 ## Slide 1
@@ -57,8 +57,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -0.07473 -0.58479  0.07866  0.14270  0.02959 -0.94898 -0.85131
-##  [8] -0.70211  1.19968 -0.38782
+##  [1] -1.2338  1.5453  0.6578  0.3263  0.1955 -0.1906  0.9571  1.1721
+##  [9] -0.5560  0.1212
 ```
 
 
