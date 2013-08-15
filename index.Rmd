@@ -17,7 +17,7 @@ assets      :
 
 ### Projeto GNU
 
-![](assets/img/GNU.png)
+<center>![](assets/img/GNU.png)</center>
 
 ## Slide 1
 
