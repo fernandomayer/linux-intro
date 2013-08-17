@@ -1,13 +1,9 @@
 # linux-intro
 
+## Introdução ao uso do Linux
 
-Introdução ao Linux
+Material utilizado para o curso introdutório ao Linux, ministrado na
+ESALQ/USP em agosto de 2013.
 
-## TODO
+Em fase de criação...
 
-
-* Interface (?)
-* Plugins:
-	- Medibuntu
-	- openjdk
-	- icedtea
