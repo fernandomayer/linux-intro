@@ -5,6 +5,8 @@
 * Histórico
 * Características
 * Diferenças
+* Softwares (diferenças e formatos: odt, odf, ...)
+* Codificação de carecteres
 
 ## Instalação
 
