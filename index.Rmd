@@ -21,7 +21,9 @@ O GNU
 
 --- &twocol
 
-## Adjust the size (and color) of points
+## Slide 0.0
+
+O GNU
 
 *** =left
 
