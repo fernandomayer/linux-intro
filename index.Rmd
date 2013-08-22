@@ -19,7 +19,7 @@ assets      :
 
 O GNU
 
-<img src="assets/img/GNU.png" style="float:center" height="80%" />
+<img src="assets/img/GNU.png" width="400" height="400" alt="GNU">
 <!-- <center>![](assets/img/GNU.png)</center> -->
 
 ---
