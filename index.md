@@ -27,11 +27,8 @@ O GNU
 
 *** =left
 
-<div style="float:left;width:25%;" class="centered">
-<img src="assets/img/GNU.png" alt="GNU" height="40%" />
-</div>
-<!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
-<!-- <center>![](assets/img/GNU.png)</center> -->
+* Item 1
+* Item 2
 
 *** =right
 
@@ -80,8 +77,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -0.1972  0.4704 -0.2308  0.3360  1.0162 -0.5103 -1.9830  1.3020
-##  [9]  1.0732  0.3175
+##  [1]  0.8228  1.5880  0.7893 -0.7644 -0.3946 -1.0474 -0.5132 -0.9458
+##  [9]  0.9180  1.4532
 ```
 
 
