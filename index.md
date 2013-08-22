@@ -19,17 +19,21 @@ assets      :
 
 O GNU
 
----
+--- &twocol
 
 ## Slide 0.0
 
 O GNU
+
+*** =left
 
 <div style="float:left;width:25%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
 <!-- <center>![](assets/img/GNU.png)</center> -->
+
+*** =right
 
 <div style="float:right;width:25%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
@@ -76,8 +80,8 @@ rnorm(10)
 ```
 
 ```
-##  [1]  0.2240 -0.9528 -0.7730  1.2016  1.0535 -0.0164  1.4574  0.4012
-##  [9]  0.4763  0.7260
+##  [1] -0.1972  0.4704 -0.2308  0.3360  1.0162 -0.5103 -1.9830  1.3020
+##  [9]  1.0732  0.3175
 ```
 
 
