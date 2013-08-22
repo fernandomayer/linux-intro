@@ -19,7 +19,10 @@ assets      :
 
 O GNU
 
-<img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU">
+<div style="text-align:center">
+<img src="assets/img/GNU.png" alt=GNU" width="150" height="150" />
+</div>
+<!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
 <!-- <center>![](assets/img/GNU.png)</center> -->
 
 ---
@@ -61,8 +64,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -0.2264  0.2233  1.2615 -0.3454 -1.0125 -1.1988 -1.2822 -0.1096
-##  [9] -0.4383 -1.0339
+##  [1]  1.9870  1.1453  0.7682 -0.6238 -0.1256 -0.8219 -0.5395  1.0716
+##  [9] -0.6612 -0.8742
 ```
 
 
