@@ -20,7 +20,7 @@ assets      :
 O GNU
 
 <div style="text-align:center">
-<img src="assets/img/GNU.png" alt="GNU" height="50%" />
+<img src="assets/img/GNU.png" alt="GNU" height="30%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
 <!-- <center>![](assets/img/GNU.png)</center> -->
