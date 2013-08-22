@@ -25,7 +25,7 @@ O GNU
 
 O GNU
 
-<div style="text-align:center float:left">
+<div style='float:left;width:40%;' class='centered'>
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
@@ -76,8 +76,8 @@ rnorm(10)
 ```
 
 ```
-##  [1]  1.4015 -0.2520 -0.4295 -3.0330  0.1071  1.2466  1.0533 -0.9355
-##  [9]  0.1434 -1.1558
+##  [1] -0.67972 -0.02694 -0.21625 -1.48727  0.78178  0.29339 -0.26645
+##  [8]  0.28248  0.62798 -0.15734
 ```
 
 
