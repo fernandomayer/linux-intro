@@ -25,13 +25,13 @@ O GNU
 
 O GNU
 
-<div style='float:left;width:40%;' class='centered'>
+<div style="float:left;width:35%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
 <!-- <center>![](assets/img/GNU.png)</center> -->
 
-<div style="text-align:center float:right">
+<div style="float:right;width:35%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
@@ -76,8 +76,8 @@ rnorm(10)
 ```
 
 ```
-##  [1] -0.67972 -0.02694 -0.21625 -1.48727  0.78178  0.29339 -0.26645
-##  [8]  0.28248  0.62798 -0.15734
+##  [1]  1.07051 -0.21173 -1.91027  1.77160  0.08514  0.46905  1.65748
+##  [8] -0.14057 -0.60307 -0.18614
 ```
 
 
