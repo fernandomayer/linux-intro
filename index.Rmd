@@ -25,13 +25,13 @@ O GNU
 
 O GNU
 
-<div style="float:left;width:35%;" class="centered">
+<div style="float:left;width:25%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
 <!-- <center>![](assets/img/GNU.png)</center> -->
 
-<div style="float:right;width:35%;" class="centered">
+<div style="float:right;width:25%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 <!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
