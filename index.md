@@ -116,12 +116,15 @@ Linus Torvalds - Linux (1991)
 
 --- .segue bg:red
 
+<i class="icon-unlock icon-4x pull-left icon-muted"></i>
+
 <br><br><br>
 ## Atenção!
 <br>
 ## Não confundir software **livre** com software **grátis**
 <br>
 ## Livre como em “liberdade de expressão”, não grátis como “cerveja grátis”
+
 
 ---
 
