@@ -376,10 +376,17 @@ contribuem para o benefício comum</p></li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-18" style="background:;">
+<slide class="" id="myslide" style="background:;">
   <article data-timings="">
-    <iframe width="560" height="315"
-src="//www.youtube.com/embed/yVpbFMhOAwE?rel=0" frameborder="0" allowfullscreen></iframe>
+    <script>
+$('#myslide').on('slideenter', function(){
+  $(this).find('article')
+    .append('<iframe width="640" height="360" src="//www.youtube.com/embed/yVpbFMhOAwE?rel=0" frameborder="0" allowfullscreen></iframe>')
+});
+$('#myslide').on('slideleave', function(){
+  $(this).find('iframe').remove();
+});
+</script>
 
   </article>
   <!-- Presenter Notes -->
