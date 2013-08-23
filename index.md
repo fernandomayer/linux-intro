@@ -15,25 +15,33 @@ assets      :
 
 ## Slide 0
 
-### Projeto GNU
-
 O GNU
 
-<div style="width:20%" class="centered">
-<img src="assets/img/GNU.png" alt="GNU"/>
+<div class="centered">
+<img src="assets/img/GNU.png" alt="GNU" width=20%/>
 </div>
 
 ---
 
 ## Slide 0
 
-### Projeto GNU
-
 O GNU
 
 <div class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="20%" />
 </div>
+
+---
+
+## Slide 0
+
+O GNU
+
+<iframe src='assets/img/GNU.png' width=20%></iframe>
+
+--- .segue .nobackground .dark
+
+## O sistema Unix
 
 --- &twocol
 
