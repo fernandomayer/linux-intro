@@ -5,6 +5,7 @@ author      : Fernando de Pol Mayer
 date        : 2013-09-02
 job         : ESALQ/USP
 logo        : Tux.svg
+biglogo     : Tux.svg
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
