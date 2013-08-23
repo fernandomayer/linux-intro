@@ -14,10 +14,12 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
-<br><br><br><br>
-### Slides disponíveis em [http://fernandomayer.github.io/linux-intro](http://fernandomayer.github.io/linux-intro)
+<br><br><br>
+### Slides disponíveis em [http://fernandomayer.github.io/linux-intro]()
 
 ### Feito com [Slidify](http://slidify.org)
+
+### Melhor visualizado com [Chromium](http://www.chromium.org) (ou [Google Chrome](https://www.google.com/chrome))
 
 ### Código-fonte disponível no [GitHub](https://github.com/fernandomayer/linux-intro/tree/gh-pages)
 
