@@ -35,11 +35,11 @@ O GNU
 
 ## O sistema Unix
 
---- .segue .nobackground .dark
+--- .nobackground .dark
 
 ## O Terminal
 
-```
+```{shell}
 cd ~/Linux
 ```
 
