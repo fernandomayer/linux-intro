@@ -19,6 +19,18 @@ assets      :
 
 O GNU
 
+<div style="float:right;width:25%;" class="centered">
+<img src="assets/img/GNU.png" alt="GNU" height="40%" />
+</div>
+
+### Projeto GNU
+
+O GNU
+
+<div style="float:right;width:50%;" class="centered">
+<img src="assets/img/GNU.png" alt="GNU" height="40%" />
+</div>
+
 --- &twocol
 
 ## Slide 0.0
@@ -34,11 +46,6 @@ O GNU
 
 * Item 3
 
-<!-- <div style="float:right;width:25%;" class="centered"> -->
-<!-- <img src="assets/img/GNU.png" alt="GNU" height="40%" /> -->
-<!-- </div> -->
-<!-- <img src="assets/img/GNU.png" width="200" height="200" align="center" alt="GNU"> -->
-<!-- <center>![](assets/img/GNU.png)</center> -->
 
 ---
 
