@@ -4,7 +4,7 @@ subtitle    : Conceitos básicos e instalação
 author      : Fernando de Pol Mayer
 date        : 2013-09-02
 job         : ESALQ/USP
-logo        : assets/img/Tux.svg
+logo        : Tux.svg
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
