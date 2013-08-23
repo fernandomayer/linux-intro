@@ -33,6 +33,7 @@ O GNU
 *** =right
 
 * Item 3
+
 <!-- <div style="float:right;width:25%;" class="centered"> -->
 <!-- <img src="assets/img/GNU.png" alt="GNU" height="40%" /> -->
 <!-- </div> -->
@@ -50,7 +51,7 @@ fernando@kirk:~/GitHub/linux-intro$ ls
 assets  index.html  index.md  index.Rmd  libraries
 ```
 
---- .class #id 
+--- 
 
 ## Slide 2
 
