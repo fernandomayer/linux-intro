@@ -27,29 +27,31 @@ Richard Stallman - Projeto GNU (1983)
 *** =left
 
 <div class="centered">
-<img src="assets/img/RMS.jpeg" width=20%/>
+<img src="assets/img/RMS.jpeg" width=40%/>
 </div>
 
 *** =right
 
 <div class="centered">
-<img src="assets/img/GNU.png" width=20%/>
+<img src="assets/img/GNU.png" width=40%/>
 </div>
 
 --- &twocol
+
+## Software Livre
 
 Linus Torvalds - Linux (1991)
 
 *** =left
 
 <div class="centered">
-<img src="assets/img/LT.jpeg" width=20%/>
+<img src="assets/img/LT.jpeg" width=40%/>
 </div>
 
 *** =right
 
 <div class="centered">
-<img src="assets/img/Tux.svg" width=20%/>
+<img src="assets/img/Tux.svg" width=40%/>
 </div>
 
 ---
