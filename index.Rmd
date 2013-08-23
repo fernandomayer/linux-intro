@@ -14,12 +14,42 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
-## Slide 0
+--- .segue .nobackground .dark
 
-O GNU
+## Software Livre
+
+--- &twocol
+
+## Software Livre
+
+Richard Stallman - Projeto GNU (1983)
+
+*** =left
 
 <div class="centered">
-<img src="assets/img/GNU.png" alt="GNU" width=20%/>
+<img src="assets/img/RMS.jpeg" width=20%/>
+</div>
+
+*** =right
+
+<div class="centered">
+<img src="assets/img/GNU.png" width=20%/>
+</div>
+
+--- &twocol
+
+Linus Torvalds - Linux (1991)
+
+*** =left
+
+<div class="centered">
+<img src="assets/img/LT.jpeg" width=20%/>
+</div>
+
+*** =right
+
+<div class="centered">
+<img src="assets/img/Tux.svg" width=20%/>
 </div>
 
 ---
@@ -32,9 +62,6 @@ O GNU
 <img src="assets/img/GNU.png" alt="GNU" height=20% />
 </div>
 
---- .segue .nobackground .dark
-
-## O sistema Unix
 
 --- .nobackground .dark
 
