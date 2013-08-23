@@ -19,7 +19,7 @@ assets      :
 
 O GNU
 
-<div style="width:30%" class="centered">
+<div style="width:20%" class="centered">
 <img src="assets/img/GNU.png" alt="GNU"/>
 </div>
 
