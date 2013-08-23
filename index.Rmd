@@ -249,7 +249,10 @@ Linus Torvalds - Linux (1991)
 
     - Nossa pesquisa tem que ser **reproduzível**
 
----
+--- .segue .nobackground .dark
 
+## O Sistema Linux
+
+---
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/yVpbFMhOAwE?rel=0" frameborder="0" allowfullscreen></iframe>
