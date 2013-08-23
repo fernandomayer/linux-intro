@@ -1,9 +1,10 @@
 ---
-title       : Introdução ao Linux
-subtitle    : R, LaTeX e outros
-author      : Fernando Mayer
-date        : 2013-08-15
+title       : Introdução ao uso do Linux
+subtitle    : Conceitos básicos e instalação
+author      : Fernando de Pol Mayer
+date        : 2013-09-02
 job         : ESALQ/USP
+logo        : assets/img/Tux.svg
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
