@@ -23,6 +23,8 @@ O GNU
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 
+---
+
 ### Projeto GNU
 
 O GNU
