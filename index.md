@@ -19,7 +19,7 @@ assets      :
 
 O GNU
 
-<div style="float:center;width:30%;" class="centered">
+<div style="width:30%" class="centered">
 <img src="assets/img/GNU.png" alt="GNU"/>
 </div>
 
@@ -32,7 +32,7 @@ O GNU
 O GNU
 
 <div class="centered">
-<img src="assets/img/GNU.png" alt="GNU" height="30%" />
+<img src="assets/img/GNU.png" alt="GNU" height="20%" />
 </div>
 
 --- &twocol
