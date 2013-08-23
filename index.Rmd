@@ -205,7 +205,7 @@ Linus Torvalds - Linux (1991)
 <br>
 ## A internet e a WWW surgiram do mesmo movimento e princípios do software livre
 <br>
-## Hoje em dia a grande maioria dos sites usa o servidor Apache e banco de dados MySQL para funcionar
+## Hoje em dia a grande maioria dos sites usa o servidor Apache e banco de dados POSTGRES para funcionar
 
 ---
 
