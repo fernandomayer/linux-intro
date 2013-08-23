@@ -19,8 +19,8 @@ assets      :
 
 O GNU
 
-<div style="float:right;width:25%;" class="centered">
-<img src="assets/img/GNU.png" alt="GNU" height="40%" />
+<div style="float:center;width:50%;" class="centered">
+<img src="assets/img/GNU.png" alt="GNU"/>
 </div>
 
 ---
@@ -29,7 +29,7 @@ O GNU
 
 O GNU
 
-<div style="float:right;width:50%;" class="centered">
+<div style="width:50%;" class="centered">
 <img src="assets/img/GNU.png" alt="GNU" height="40%" />
 </div>
 
