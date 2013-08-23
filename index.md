@@ -248,3 +248,7 @@ Linus Torvalds - Linux (1991)
     - Temos que provar os resultados que obtemos
 
     - Nossa pesquisa tem que ser **reproduzível**
+
+---
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/yVpbFMhOAwE?rel=0" frameborder="0" allowfullscreen></iframe>
