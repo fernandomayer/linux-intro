@@ -170,7 +170,7 @@ Linus Torvalds - Linux (1991)
 
 - Firefox, Thunderbird
 
-- Google Chrome (no Linux a melhor opção é o Chromium)
+- Google Chrome (no Linux é Chromium)
 
 - LaTeX
 
