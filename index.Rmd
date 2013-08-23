@@ -134,7 +134,7 @@ Linus Torvalds - Linux (1991)
 
 0. Liberdade para usar o programa para qualquer propósito
 
-1. Liberdade para estudar com o programa funciona, e modificá-lo para
+1. Liberdade para estudar como o programa funciona, e modificá-lo para
     sua necessidade
 
 2. Liberdade para redistribuir cópias (e ajudar o seu vizinho)
@@ -170,7 +170,7 @@ Linus Torvalds - Linux (1991)
 
 - Firefox, Thunderbird
 
-- Chromium (baseado no Google Chrome)
+- Google Chrome (no Linux a melhor opção é o Chromium)
 
 - LaTeX
 
