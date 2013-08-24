@@ -267,3 +267,4 @@ $('#myslide').on('slideleave', function(){
 </script>
 
 ---
+
