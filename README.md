@@ -2,7 +2,7 @@
 
 Este branch é o repositório dos slides utilizados no curso.
 
-Os slides foram criados com o pacote [Slidify](www.slidify.org) do R. É
+Os slides foram criados com o pacote [Slidify](http://www.slidify.org) do R. É
 necessário instalar a versão em desenvolvimento deste pacote disponível
 no [GitHub](https://github.com/ramnathv/slidify/tree/dev):
 
@@ -28,5 +28,5 @@ publish("linux-intro", "fernandomayer", host = "github")
 Note que para publicar no GitHub, o repositório já deve estar
 devidamente configurado e no branch `gh-pages`.
 
-Com o Slidify também é possível publicar no [Dropbox](www.dropbox.com) e
-no [RPubs](rpubs.com) - veja `?publish` para isso.
+Com o Slidify também é possível publicar no [Dropbox](http://www.dropbox.com) e
+no [RPubs](http://rpubs.com) - veja `?publish` para isso.
