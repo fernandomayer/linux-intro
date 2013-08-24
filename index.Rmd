@@ -1,10 +1,11 @@
 ---
 title       : Introdução ao uso do Linux
 subtitle    : Conceitos básicos e instalação
-author      : Fernando de Pol Mayer
+author      : Fernando de Pol Mayer & Luiz Ricardo Nakamura
 date        : 2013-09-02
-job         : ESALQ/USP
+job         : ESALQ/USP - 02 e 03 de Setembro, 2013
 logo        : Tux.svg
+license     : by-sa
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
