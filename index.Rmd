@@ -15,6 +15,19 @@ assets      :
   css: "http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
 ---
 
+<!-- Algumas modificacoes necessarias enquanto o codigo do Slidify esta -->
+<!-- em desenvolvimento -->
+<!-- Para as maracacoes funcionarem -->
+<style>
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic
+}
+</style>
+<!-- FIM -->
+
 <br><br><br>
 ### Slides disponíveis em [http://fernandomayer.github.io/linux-intro]()
 
