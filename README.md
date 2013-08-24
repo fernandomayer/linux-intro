@@ -18,6 +18,13 @@ require(slidify)
 slidify("index.Rmd")
 ```
 
+O resultado final é o arquivo `index.html`, em HTML5, que pode ser
+aberto diretamente no navegador (preferencialmente o Chromium).
+
+As modificações devem ser feitas no arquivo `Rmd` que é uma extensão da
+linguagem Markdown para o R. A interpretação será feita pelo pacote
+[`knitr`](http://yihui.name/knitr) (que também deve estar instalado).
+
 Para publicar é necessário um repositório próprio no GitHub. Neste caso,
 o comando utilizado foi
 
@@ -30,3 +37,12 @@ devidamente configurado e no branch `gh-pages`.
 
 Com o Slidify também é possível publicar no [Dropbox](http://www.dropbox.com) e
 no [RPubs](http://rpubs.com) - veja `?publish` para isso.
+
+**Contribuições serão sempre bem-vindas**. A melhor forma de contribuir
+  é dando um fork nesse repositório e enviar suas contribuições por
+  *pull request*. Para uma rápida introdução ao git e GitHub veja o
+  [git-rautu](https://github.com/fernandomayer/git-rautu).
+  
+## Licença
+
+[Creative Commons BY-SA](http://creativecommons.org/licenses/by-sa/3.0/deed.pt_BR)
