@@ -263,6 +263,18 @@ Linus Torvalds - Linux (1991)
 
     - Nossa pesquisa tem que ser **reproduzível**
 
+---
+
+## Software Livre
+
+### Ciência (Estatística) aberta
+
+Um exemplo: [FOAS](http://www.foastat.org)
+<br>
+<div class="centered">
+<img src="assets/img/foas.png" width=80%/>
+</div>
+
 --- .segue .nobackground .dark
 
 ## O Sistema Linux
