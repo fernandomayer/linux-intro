@@ -56,7 +56,7 @@
 
 <!-- em desenvolvimento -->
 
-<!-- Para as maracacoes funcionarem -->
+<!-- Para as marcacoes funcionarem -->
 
 <style>
 strong {
@@ -408,7 +408,7 @@ contribuem para o benefício comum</p></li>
 
 <slide class="segue nobackground dark" id="slide-18" style="background:;">
   <hgroup>
-    <h2>O Sistema Linux</h2>
+    <h2>O Sistema Operacional GNU/Linux</h2>
   </hgroup>
   <article data-timings="">
     
@@ -433,8 +433,245 @@ $('#myslide').on('slideleave', function(){
 </slide>
 
 <slide class="" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>Sistema Operacional</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>É um conjunto de programas que fazem a interface entre o usuário e o
+<em>hardware</em></p></li>
+<li><p>Sua principal função é o gerenciamento de recursos e periféricos,
+interpretação de mensagens e execução de programas</p></li>
+<li><p>Um SO pode ser dividido em duas partes:</p>
+
+<ul>
+<li><strong>Núcleo</strong> ou <strong>kernel</strong> desempenha as funções vitais do sistema
+(baixo-nível) \(\rightarrow\) <strong>Linux</strong></li>
+<li><strong>Concha</strong> ou <strong>Shell</strong> é a interface entre o usuário e o
+kernel. Pode ser em um formato &quot;cru&quot; como a linha de comando ou
+mais amigável com janelas gráficas \(\rightarrow\) <strong>GNU</strong></li>
+</ul></li>
+<li><p>O conjunto de kernel Linux e dos programas GNU é o sistema operacional
+que chamamos de <strong>GNU/Linux</strong> (ou simplesmente Linux)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <!-- ### Histórico -->
+
+<!-- - **1969-1973** Ken Thompson e Dennis Ritchie (Bell Labs) $\rightarrow$ -->
+
+<!--     Unix (fechado e caro) -->
+
+<!-- - **1987** Andrew Stuart Tanenbaum $\rightarrow$ Minix (aberto) -->
+
+<!-- - **1991** Linux Torvals $\rightarrow$ Linux -->
+
+<h3>Principais características</h3>
+
+<ul>
+<li><p>Livre e desenvolvido voluntariamente por programadores experientes,
+hackers, e contribuidores espalhados ao redor do mundo</p></li>
+<li><p>Convive pacificamente com outros sistemas operacionais no mesmo
+computador (embora não seja a melhor opção...)</p></li>
+<li><p>Multitarefa e multiusuário</p></li>
+<li><p>Modular: carrega apenas o necessário e libera memória após a
+utilização</p></li>
+<li><p>Não há a necessidade de reiniciar o sistema após a modificar alguma
+configuração ou instalar programas (apenas na atualização de kernel)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Principais características</h3>
+
+<ul>
+<li><p>Roda confortavelmente em sistemas de baixo desempenho (processadores
+antigos, pouca memória RAM)</p></li>
+<li><p><strong>Não é vulnerável à vírus!</strong> Devido à separação de privilégios clara
+entre usuário e administrador, vírus possuem uma ação muito
+limitada, por isso são inúteis. (Esqueça o anti-vírus!)</p></li>
+<li><p>Suporte completo e nativo a diversos dispositivos de comunicação (USB,
+Bluetooth, ...)</p>
+
+<ul>
+<li>Raramente serão necessários drivers externos (com excessão de
+tecnologias muito novas)</li>
+</ul></li>
+<li><p>Os sistemas de arquivos usados pelo GNU/Linux (Ext3, reiserfs, ...)
+organizam os arquivos de forma inteligente evitando a
+<strong>fragmentação</strong>, tornando um poderoso sistema para aplicações
+exigentes e gravações intensivas. (Esqueça o desfragmentador!)</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Distribuições do Linux</h3>
+
+<ul>
+<li><p>Devido à sua liberdade, um grupo de pessoas, empresa ou
+organização pode decidir distribuir uma versão do Linux com diferentes
+características</p>
+
+<ul>
+<li>Facilidade de uso</li>
+<li>Foco em desempenho</li>
+<li>Agrupar programas de interesse (programação, edição gráfica,
+...)</li>
+</ul></li>
+<li><p>Cada <strong>distribuição</strong> tem uma característica própria como o sistema de
+instalação, objetivo, ..., embora todas apresentem a mesma estrutura
+básica do Linux</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Distribuições do Linux</h3>
+
+<p>Figura com vários logos</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>GUIs (Graphical User Interface)</h3>
+
+<p>Diversas cascas (<em>shell</em>) existem para o Linux. Algumas das principais
+são:</p>
+
+<ul>
+<li><a href="http://www.gnome.org">Gnome</a></li>
+<li><a href="http://www.kde.org">KDE</a></li>
+<li><a href="http://www.xfce.org">XFCE</a></li>
+<li><a href="https://unity.ubuntu.com">Unity</a></li>
+</ul>
+
+<p>Além, é claro, do <strong>terminal</strong>, onde você possui uma interação mais
+&quot;direta&quot; com o kernel (veremos adiante).</p>
+
+<p>Aqui você também tem a opção de escolha!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Estrutura básica de diretórios</h3>
+
+<p><strong>O mais importante:</strong> no Linux os diretórios são separados por <code>/</code> e
+  não por <code>\</code> como no Windows</p>
+
+<ul>
+<li>Além disso, uma <code>/</code> (barra sozinha) tem um significado especial: é a
+<strong>raíz de todo o sistema</strong>, ou seja, todos os diretórios começam a
+partir dela.</li>
+</ul>
+
+<p>Alguns dos principais diretórios são:</p>
+
+<ul>
+<li><code>/bin</code> e <code>/sbin</code>: arquivos executáveis de programas</li>
+<li><code>/etc</code>: arquivos de configuração</li>
+<li><code>/home</code>: arquivos pessoais do usuário</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="segue nobackground dark" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Ubuntu</h2>
+  </hgroup>
   <article data-timings="">
     
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Ubuntu</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Origem</h3>
+
+<ul>
+<li><p>Termo Africano para &quot;humanidade para os outros&quot;</p></li>
+<li><p>Uma distribuição Linux baseada na simplicidade, usabilidade e fácil
+instalação</p></li>
+<li><p>Baseado na distribuição <strong>Debian</strong>, e patrocinada pela empresa Canonical</p></li>
+<li><p>Hoje é mantida pela (ampla) comunidade, apoiada pela Canonical</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Ubuntu</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Características</h3>
+
+<ul>
+<li><p>Novas versões lançadas a cada 6 meses (em maio e outubro)</p>
+
+<ul>
+<li>Suporte (atualizações) mantido por 9 meses nas versões normais, e
+por 5 anos nas versões LTS (Long Term Support)</li>
+</ul></li>
+<li><p>Central de programas com XXXX pacotes disponíveis</p></li>
+<li><p>Funciona &quot;Live&quot;: através de um pen-drive ou DVD, sem necessidade de
+instalação</p></li>
+<li><p>Diversos &quot;sabores&quot;:</p>
+
+<ul>
+<li><a href="http://www.edubuntu.org">Edubuntu</a></li>
+<li><a href="http://www.xubuntu.org">Xubuntu</a></li>
+<li><a href="http://ubuntugnome.org">Ubuntu GNOME</a></li>
+<li><a href="http://ubuntustudio.org">Ubuntu Studio</a></li>
+</ul></li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -547,7 +784,7 @@ $('#myslide').on('slideleave', function(){
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=18 title='O Sistema Linux'>
+        data-slide=18 title='O Sistema Operacional GNU/Linux'>
          18
       </a>
     </li>
@@ -559,8 +796,62 @@ $('#myslide').on('slideleave', function(){
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title=''>
+        data-slide=20 title='Sistema Operacional'>
          20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Linux'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Linux'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Linux'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Linux'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Linux'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Linux'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Ubuntu'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Ubuntu'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Ubuntu'>
+         29
       </a>
     </li>
   </ul>
@@ -573,7 +864,21 @@ $('#myslide').on('slideleave', function(){
 </body>
   <!-- Load Javascripts for Widgets -->
   
-  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <!-- DONE LOADING HIGHLIGHTER JS FILES -->
