@@ -585,6 +585,99 @@ Estas três opções juntas fazem com que o `ls`:
 - Mostre os arquivos ocultos `a` (ou `--all`)
 - Mostre os tamanhos dos arquivos em formato para humanos `h`
 
+--- bg:red
+
+## Importante!
+
+### Arquivos ocultos
+
+- Um arquivo (ou diretório) oculto no Linux é simplesmente um arquivo que
+	contém um ponto (`.`) na frente do nome.
+- Por exemplo:
+	- `arquivo.txt` é um arquivo normal
+	- `.arquivo.txt` é um arquivo oculto
+- Normalmente são utilizados para arquivos de configuração
+- No Nautilus, aperte `<Ctrl><h>` para habilitar/desabilitar a
+  visualização destes arquivos
+
+---
+
+## Linux
+
+### Terminal
+
+A saída do comando `ls -lah` mostra uma série de resultados
+interessantes. Por exemplo:
+
+```bash
+fernando@kirk:~$ ls -lah
+total 11M
+drwxr-xr-x 42 fernando fernando 4,0K Ago 30 15:24 .
+drwxr-xr-x  4 root     root     4,0K Jul 25 22:59 ..
+drwx------  3 fernando fernando 4,0K Ago 30 12:37 .dropbox
+drwx------ 31 fernando fernando 4,0K Ago 30 12:37 Dropbox
+drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
+-rw-rw-r--  1 fernando fernando   47 Jul 26 04:12 .Renviron
+-rw-rw-r--  1 fernando fernando  780 Ago 22 14:23 .Rprofile
+drwxrwxr-x  9 fernando fernando 4,0K Ago  6 14:08 Ubuntu One
+drwxr-xr-x  4 fernando fernando 4,0K Ago 28 00:58 Videos
+```
+
+---
+
+## Linux
+
+### Permissões
+
+A primeira coluna mostra as permissões para cada arquivo/diretório, e
+funciona assim:
+
+<div class="centered">
+<img src="assets/img/perms.png"/>
+</div>
+<br>
+
+- O primeiro *string* mostra se é um diretório `d` ou um arquivo comum
+  `-`
+- Os outros 9 caracteres são divididos em três grupos, referente às
+  permissões de usuário (dono), do grupo, e demais. Os caracteres que
+  representam as permissões são
+
+---
+
+## Linux
+
+### Permissões
+
+As permissões para o usuário, grupo e demais podem ser
+
+Caracter | Permissão
+---------|----------
+`r`      | Permissão de leitura (*read*)
+`w`      | Permissão de escrita (*write*)
+`x`      | Permissão de execução (*execute*)
+`-`      | Permissão desabilitada
+
+---
+
+## Linux
+
+### Permissões
+
+Dessa forma,
+
+```bash
+drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
+-rw-rw-r--  1 fernando fernando  780 Ago 22 14:23 .Rprofile
+```
+
+- `Music` é um diretório (`d`), do usuário `fernando`, do grupo
+  `fernando`
+	  - O dono possui permissão de gravação, escrita e execução (`rwx`)
+	  - O grupo e os demais possuem permissão de leitura e execução (`r-x`)
+- `.Rprofile` é um arquivo comum (`-`) (e oculto!)
+      - O dono e o grupo possuem permissão de leitura e gravação (`rw-`)
+	  - Os demais possuem permissão de leitura apenas (`r--`)
 
 
 ---

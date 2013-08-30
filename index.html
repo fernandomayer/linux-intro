@@ -942,14 +942,164 @@ lista</li>
 <ul>
 <li>Retorne uma lista <code>l</code></li>
 <li>Mostre os arquivos ocultos <code>a</code> (ou <code>--all</code>)</li>
-<li>Mostre os tamnhos dos arquivos em formato para humanos <code>h</code></li>
+<li>Mostre os tamanhos dos arquivos em formato para humanos <code>h</code></li>
 </ul>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-43" style="background:;">
+<slide class="" id="slide-43" style="background:red;">
+  <hgroup>
+    <h2>Importante!</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Arquivos ocultos</h3>
+
+<ul>
+<li>Um arquivo (ou diretório) oculto no Linux é simplesmente um arquivo que
+contém um ponto (<code>.</code>) na frente do nome.</li>
+<li>Por exemplo:
+
+<ul>
+<li><code>arquivo.txt</code> é um arquivo normal</li>
+<li><code>.arquivo.txt</code> é um arquivo oculto</li>
+</ul></li>
+<li>Normalmente são utilizados para arquivos de configuração</li>
+<li>No Nautilus, aperte <code>&lt;Ctrl&gt;&lt;h&gt;</code> para habilitar/desabilitar a
+visualização destes arquivos</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Terminal</h3>
+
+<p>A saída do comando <code>ls -lah</code> mostra uma série de resultados
+interessantes. Por exemplo:</p>
+
+<pre><code class="bash">fernando@kirk:~$ ls -lah
+total 11M
+drwxr-xr-x 42 fernando fernando 4,0K Ago 30 15:24 .
+drwxr-xr-x  4 root     root     4,0K Jul 25 22:59 ..
+drwx------  3 fernando fernando 4,0K Ago 30 12:37 .dropbox
+drwx------ 31 fernando fernando 4,0K Ago 30 12:37 Dropbox
+drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
+-rw-rw-r--  1 fernando fernando   47 Jul 26 04:12 .Renviron
+-rw-rw-r--  1 fernando fernando  780 Ago 22 14:23 .Rprofile
+drwxrwxr-x  9 fernando fernando 4,0K Ago  6 14:08 Ubuntu One
+drwxr-xr-x  4 fernando fernando 4,0K Ago 28 00:58 Videos
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-45" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Permissões</h3>
+
+<p>A primeira coluna mostra as permissões para cada arquivo/diretório, e
+funciona assim:</p>
+
+<div class="centered">
+<img src="assets/img/perms.png"/>
+</div>
+
+<p><br></p>
+
+<ul>
+<li>O primeiro <em>string</em> mostra se é um diretório <code>d</code> ou um arquivo comum
+<code>-</code></li>
+<li>Os outros 9 caracteres são divididos em três grupos, referente às
+permissões de usuário (dono), do grupo, e demais. Os caracteres que
+representam as permissões são</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-46" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Permissões</h3>
+
+<p>As permissões para o usuário, grupo e demais podem ser</p>
+
+<table><thead>
+<tr>
+<th>Caracter</th>
+<th>Permissão</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>r</code></td>
+<td>Permissão de leitura (<em>read</em>)</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>Permissão de escrita (<em>write</em>)</td>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>Permissão de execução (<em>execute</em>)</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Permissão desabilitada</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-47" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Permissões</h3>
+
+<p>Dessa forma,</p>
+
+<pre><code class="bash">drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
+-rw-rw-r--  1 fernando fernando  780 Ago 22 14:23 .Rprofile
+</code></pre>
+
+<ul>
+<li><code>Music</code> é um diretório (<code>d</code>), do usuário <code>fernando</code>, do grupo
+<code>fernando</code>
+
+<ul>
+<li>O dono possui permissão de gravação, escrita e execução (<code>rwx</code>)</li>
+<li>O grupo e os demais possuem permissão de leitura e execução (<code>r-x</code>)</li>
+</ul></li>
+<li><code>.Rprofile</code> é um arquivo comum (<code>-</code>)
+
+<ul>
+<li>O dono e o grupo possuem permissão de leitura e gravação (<code>rw-</code>)</li>
+<li>Os demais possuem permissão de leitura apenas (<code>r--</code>)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-48" style="background:;">
   <hgroup>
     <h3>sudo</h3>
   </hgroup>
@@ -964,7 +1114,7 @@ lista</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-44" style="background:;">
+<slide class="" id="slide-49" style="background:;">
   <hgroup>
     <h3>Onde buscar ajuda (geral)</h3>
   </hgroup>
@@ -1233,14 +1383,44 @@ lista</li>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=43 title='sudo'>
+        data-slide=43 title='Importante!'>
          43
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=44 title='Onde buscar ajuda (geral)'>
+        data-slide=44 title='Linux'>
          44
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='Linux'>
+         45
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='Linux'>
+         46
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title='Linux'>
+         47
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='sudo'>
+         48
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='Onde buscar ajuda (geral)'>
+         49
       </a>
     </li>
   </ul>
