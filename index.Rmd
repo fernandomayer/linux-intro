@@ -403,7 +403,9 @@ Aqui você também tem a opção de escolha!
 <br>
 ## Conheça o Ubuntu 12.04 LTS e sua interface Unity
 <br>
+<center>
 <i class="icon-arrow-down icon-4x icon-muted"></i>
+<center/>
 
 ---
 
