@@ -627,6 +627,21 @@ drwxr-xr-x  4 fernando fernando 4,0K Ago 28 00:58 Videos
 
 ## Linux
 
+### Terminal
+
+De trás pra frente temos
+
+- O nome do arquivo ou diretório
+- A data de última modificação
+- O tamanho do arquivo, em Kb, MB ou GB (porque usamos a opção `h`)
+- O dono (usuário) do aqrquivo/diretório e o grupo ao qual pertence
+- O número de arquivos contidos em um diretório (para arquivos será
+  sempre 1)
+
+---
+
+## Linux
+
 ### Permissões
 
 A primeira coluna mostra as permissões para cada arquivo/diretório, e
@@ -678,7 +693,6 @@ drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
 - `.Rprofile` é um arquivo comum (`-`) (e oculto!)
       - O dono e o grupo possuem permissão de leitura e gravação (`rw-`)
 	  - Os demais possuem permissão de leitura apenas (`r--`)
-
 
 ---
 
