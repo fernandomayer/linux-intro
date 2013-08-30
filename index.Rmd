@@ -632,11 +632,17 @@ drwxr-xr-x  4 fernando fernando 4,0K Ago 28 00:58 Videos
 De trás pra frente temos
 
 - O nome do arquivo ou diretório
+	- Um ponto `.` significa **este diretório**
+	- Dois pontos `..` representa o **diretório acima**
 - A data de última modificação
 - O tamanho do arquivo, em Kb, MB ou GB (porque usamos a opção `h`)
-- O dono (usuário) do aqrquivo/diretório e o grupo ao qual pertence
+- O dono (usuário) do arquivo/diretório e o grupo ao qual pertence
+	- Normalmente um usuário pertence à vários grupos que dão acesso à
+      arquivos comuns (não iremos nos aprofundar em permissões de
+      grupos)
 - O número de arquivos contidos em um diretório (para arquivos será
   sempre 1)
+- As permissões de acesso
 
 ---
 
@@ -693,6 +699,23 @@ drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
 - `.Rprofile` é um arquivo comum (`-`) (e oculto!)
       - O dono e o grupo possuem permissão de leitura e gravação (`rw-`)
 	  - Os demais possuem permissão de leitura apenas (`r--`)
+
+---
+
+## Linux
+
+### Terminal
+
+Mais comandos: cd, mkdir, cp, mv, tar, cat, locate
+
+E: ps e kill ??
+
+---
+
+## Desafio
+
+### Baixar e instalar o Rgedit-plugin
+
 
 ---
 
