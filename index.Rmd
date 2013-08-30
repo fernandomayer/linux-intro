@@ -402,7 +402,7 @@ Aqui você também tem a opção de escolha!
 
 <br>
 ## Conheça o Ubuntu 12.04 LTS e sua interface Unity
-<br>
+<br><br><br><br>
 <center>
 <i class="icon-arrow-down icon-4x icon-muted"></i>
 <center/>
@@ -489,7 +489,7 @@ Alguns dos principais diretórios são:
 
 ---
 
-### Super usuários: como eles são
+### A fisionomia dos super-usuários
 
 <div class="centered">
 <img src="assets/img/super-users.jpg" width=80%/>
@@ -663,8 +663,7 @@ funciona assim:
 - O primeiro *string* mostra se é um diretório `d` ou um arquivo comum
   `-`
 - Os outros 9 caracteres são divididos em três grupos, referente às
-  permissões de usuário (dono), do grupo, e demais. Os caracteres que
-  representam as permissões são
+  permissões de usuário (dono), do grupo, e demais usuários
 
 ---
 
