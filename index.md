@@ -571,6 +571,24 @@ aluno@lce:~$ ls -l
 
 ---
 
+## Linux
+
+### Terminal
+
+Mais opções podem ser passadas ao mesmo tempo. Por exemplo
+
+```bash
+aluno@lce:~$ ls -lah
+```
+Estas três opções juntas fazem com que o `ls`:
+- Retorne uma lista `l`
+- Mostre os arquivos ocultos `a` (ou `--all`)
+- Mostre os tamnhos dos arquivos em formato para humanos `h`
+
+
+
+---
+
 ### sudo
 <br><br>
 <div class="centered">
