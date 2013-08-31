@@ -8,7 +8,7 @@ logo        : Tux.svg
 license     : by-sa
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow #tomorrow
+hitheme     : solarized_dark # tomorrow
 widgets     : [mathjax, bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 assets      :
@@ -405,7 +405,7 @@ Aqui você também tem a opção de escolha!
 <br><br><br><br>
 <center>
 <i class="icon-arrow-down icon-4x icon-muted"></i>
-<center/>
+</center>
 
 ---
 
@@ -497,7 +497,7 @@ Alguns dos principais diretórios são:
 
 --- .segue .nobackground .dark
 
-## O Terminal <i class="icon-smile icon-muted"></i>
+## <i class="icon-terminal icon-muted"></i> O Terminal 
 
 ---
 
@@ -707,9 +707,139 @@ drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
 
 ### Terminal
 
-Mais comandos: cd, mkdir, cp, mv, tar, cat, locate
+Para mudar de diretório, use o comando `cd` (*change directory*)
 
-E: ps e kill ??
+```bash
+aluno@lce:~$ cd Documentos
+aluno@lce:~/Documentos$
+```
+
+Note que `Documentos` é um diretório que está em `/home/aluno`. Como
+você já está em `/home/aluno` não é necessário especificar todo o
+caminho novamente, mas esse comando é equivalente a
+
+```bash
+aluno@lce:~$ cd /home/aluno/Documentos
+```
+Ou
+
+```bash
+aluno@lce:~$ cd ~/Documentos
+```
+
+---
+
+### Tente a segunte sequência de comandos:
+
+Um `#` é um comentário
+
+```bash
+cd /
+pwd
+ls
+cd /home
+pwd
+ls
+cd /usr
+pwd
+ls
+cd # O que acontece aqui?
+pwd
+ls
+cd ~ # E aqui?
+pwd
+ls
+```
+
+---
+
+### Agora veja
+
+```bash
+aluno@lce:~$ cd Documentos
+aluno@lce:~/Documentos$ pwd
+/home/aluno/Documentos
+aluno@lce:~/Documentos$ cd ..
+aluno@lce:~$ pwd
+/home/aluno
+aluno@lce:~$ cd -
+aluno@lce:~/Documentos$ pwd
+/home/aluno/Documentos
+```
+
+- `cd ..` volta um diretório acima (lembra do `..` no `ls -lah`?)
+- `cd -` volta para o último diretório visitado
+
+---
+
+## Linux
+
+### Terminal
+
+Para **criar** um diretório, use o comando `mkdir` (*make directory*)
+
+```bash
+fernando@kirk:~$ ls
+fernando@kirk:~$ mkdir curso_linux
+fernando@kirk:~$ ls
+fernando@kirk:~$ cd curso_linux
+fernando@kirk:~/curso_linux$ ls
+```
+
+---
+
+## Importante!
+
+### Nomes de comandos e diretórios
+
+- Os nomes de comandos são *case-sensitive*, ou seja
+
+<center>
+`ls` $\neq$ `Ls` $\neq$ `LS`
+</center>
+
+- Os nomes de diretórios e arquivos são *case-sensitive*, portanto
+
+<center>
+`curso_linux` $\neq$ `Curso_linux` $\neq$ `Curso_Linux` $\neq$ `CURSO_LINUX`
+</center>
+
+- Note que você pode ter o mesmo nome de diretório capitalizado
+  diferente em um mesmo lugar, mas serão independentes
+
+- Os nomes de diretórios e arquivos *podem* conter espaços (ex.: `curso
+  linux`), mas você realmente não vai querer fazer isso
+  <i class="icon-smile icon-muted"></i>
+
+- Use o `<Tab>` para autocompletar comandos e nomes de arquivos/diretórios!
+
+---
+
+## Linux
+
+### Terminal
+
+Para **remover** um diretório, use o comando `rm` (*remove*)
+
+```bash
+fernando@kirk:~$ rm -r curso_linux
+fernando@kirk:~$ ls
+```
+
+- A opção `-r` é necessária para remover recursivamente um diretório
+- Se o diretório estiver vazio, podemos usar apenas `rmdir curso_linux`
+
+<div class="alert alert-info">
+ <p>Cuidado! Remover pelo terminal não tem volta!</p>
+</div>
+
+---
+
+## Linux
+
+### Terminal
+
+
 
 ---
 
