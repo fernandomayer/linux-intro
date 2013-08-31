@@ -280,7 +280,7 @@ se beneficiem</li>
 <li>OpenOffice</li>
 <li>Firefox, Thunderbird</li>
 <li>Google Chrome (no Linux é Chromium)</li>
-<li>LaTeX</li>
+<li>\(\LaTeX\)</li>
 </ul>
 
   </article>
@@ -552,12 +552,14 @@ básica do Linux</li>
 
 <slide class="" id="slide-24" style="background:;">
   <hgroup>
-    <h2>Linux</h2>
+    <h3>Distribuições do Linux</h3>
   </hgroup>
   <article data-timings="">
-    <h3>Distribuições do Linux</h3>
+    <p>Veja <a href="http://distrowatch.com">Distrowatch</a></p>
 
-<p>Figura com vários logos</p>
+<div class="centered">
+<img src="assets/img/linux_grafico.jpg" width=80%/>
+</div>
 
   </article>
   <!-- Presenter Notes -->
@@ -606,7 +608,8 @@ instalação</li>
 <li>Suporte (atualizações) mantido por 9 meses nas versões normais, e
 por 5 anos nas versões LTS (Long Term Support)</li>
 </ul></li>
-<li>Central de programas com XXXX pacotes disponíveis</li>
+<li>Central de programas com mais de 40000 pacotes disponíveis (incluindo
+R, \(\LaTeX\), \(\ldots\))</li>
 <li>Funciona &quot;Live&quot;: através de um pen-drive ou DVD, sem necessidade de
 instalação</li>
 <li>Diversos &quot;sabores&quot;:
@@ -1165,7 +1168,7 @@ caminho novamente, mas esse comando é equivalente a</p>
 
 <slide class="" id="slide-50" style="background:;">
   <hgroup>
-    <h3>Tente a segunte sequência de comandos:</h3>
+    <h3>Tente a seguinte sequência de comandos:</h3>
   </hgroup>
   <article data-timings="">
     <p>Um <code>#</code> é um comentário</p>
@@ -1207,6 +1210,8 @@ aluno@lce:~/Documentos$ pwd
 /home/aluno/Documentos
 </code></pre>
 
+<p><br></p>
+
 <ul>
 <li><code>cd ..</code> volta um diretório acima (lembra do <code>..</code> no <code>ls -lah</code>?)</li>
 <li><code>cd -</code> volta para o último diretório visitado</li>
@@ -1225,11 +1230,11 @@ aluno@lce:~/Documentos$ pwd
 
 <p>Para <strong>criar</strong> um diretório, use o comando <code>mkdir</code> (<em>make directory</em>)</p>
 
-<pre><code class="bash">fernando@kirk:~$ ls
-fernando@kirk:~$ mkdir curso_linux
-fernando@kirk:~$ ls
-fernando@kirk:~$ cd curso_linux
-fernando@kirk:~/curso_linux$ ls
+<pre><code class="bash">aluno@lce:~$ ls
+aluno@lce:~$ mkdir curso_linux
+aluno@lce:~$ ls
+aluno@lce:~$ cd curso_linux
+aluno@lce:~/curso_linux$ ls
 </code></pre>
 
   </article>
@@ -1264,7 +1269,7 @@ fernando@kirk:~/curso_linux$ ls
 diferente em um mesmo lugar, mas serão independentes</p></li>
 <li><p>Os nomes de diretórios e arquivos <em>podem</em> conter espaços (ex.: <code>curso
 linux</code>), mas você realmente não vai querer fazer isso
-<i class="icon-smile icon-muted"></i></p></li>
+<i class="icon-smile"></i></p></li>
 <li><p>Use o <code>&lt;Tab&gt;</code> para autocompletar comandos e nomes de arquivos/diretórios!</p></li>
 </ul>
 
@@ -1281,8 +1286,8 @@ linux</code>), mas você realmente não vai querer fazer isso
 
 <p>Para <strong>remover</strong> um diretório, use o comando <code>rm</code> (<em>remove</em>)</p>
 
-<pre><code class="bash">fernando@kirk:~$ rm -r curso_linux
-fernando@kirk:~$ ls
+<pre><code class="bash">aluno@lce:~$ rm -r curso_linux
+aluno@lce:~$ ls
 </code></pre>
 
 <ul>
@@ -1305,22 +1310,254 @@ fernando@kirk:~$ ls
   <article data-timings="">
     <h3>Terminal</h3>
 
+<p>Para <strong>criar</strong> um arquivo de texto, podemos usar o gedit</p>
+
+<pre><code class="bash">aluno@lce:~$ mkdir curso_linux
+aluno@lce:~$ cd curso_linux/
+aluno@lce:~/curso_linux$ ls
+aluno@lce:~/curso_linux$ gedit arquivo.txt &amp;
+</code></pre>
+
+<ul>
+<li>Escreva alguma coisa, salve e feche o programa</li>
+<li>Note o <code>&amp;</code> no final do comando: ele serve para executar e retornar
+para a linha de comando (caso contrário, o terminal ficaria &quot;ocupado&quot;)
+<div class="alert alert-info">
+<p>O comando <code>gedit</code> também pode ser usado para <strong>abrir</strong> arquivos de
+texto já existentes</p>
+</div></li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-56" style="background:;">
   <hgroup>
-    <h2>Desafio</h2>
+    <h2>Linux</h2>
   </hgroup>
   <article data-timings="">
-    <h3>Baixar e instalar o Rgedit-plugin</h3>
+    <h3>Terminal</h3>
+
+<p>Para <strong>copiar</strong> um arquivo usamos o <code>cp</code> (<em>copy-paste</em>) que tem a
+seguinte sintaxe</p>
+
+<pre><code class="bash">cp &lt;arquivo original&gt; &lt;arquivo cópia&gt;
+</code></pre>
+
+<p>Por exemplo, para copiar <code>arquivo.txt</code> de <code>/home/aluno/curso_linux</code> para
+<code>/home/aluno/Documentos</code></p>
+
+<pre><code class="bash">aluno@lce:~/curso_linux$ cp arquivo.txt /home/aluno/Documentos
+</code></pre>
+
+<p>Note que qualquer um destes comandos faria a mesma coisa</p>
+
+<pre><code class="bash">cp arquivo.txt ~/Documentos
+cp arquivo.txt ../Documentos
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-57" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Terminal</h3>
+
+<p>Para copiar um arquivo de um diretório para o atual, por exemplo</p>
+
+<pre><code class="bash">aluno@lce:~/curso_linux$ cd ../Documentos
+aluno@lce:~/Documentos$ cp ~/curso_linux/arquivo.txt .
+</code></pre>
+
+<ul>
+<li>Note que o ponto <code>.</code> no final representa o diretório atual</li>
+</ul>
+
+<p>Para copiar <strong>todos</strong> os arquivos de um diretório para outro</p>
+
+<pre><code class="bash">aluno@lce:~/Documentos$ cd
+aluno@lce:~$ cp curso_linux/* Downloads
+</code></pre>
+
+<ul>
+<li>O asterisco <code>*</code> dentro de um diretório significa &quot;tudo&quot; que estiver
+dentro dele</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-58" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Terminal</h3>
+
+<p>Para <strong>mover</strong> um arquivo entre diretórios usamos o <code>mv</code> (<em>move</em>), que
+possui a mesma sintaxe e funciona da mesma forma que o <code>cp</code>. Por exemplo</p>
+
+<pre><code class="bash">aluno@lce:~$ mv curso_linux/arquivo.txt .
+</code></pre>
+
+<p>O comando <code>mv</code> também serve para <strong>renomear</strong> um arquivo, se for
+aplicado no mesmo diretório. Por exemplo, para renomear <code>arquivo.txt</code>
+para <code>arquivo_curso.txt</code></p>
+
+<pre><code class="bash">aluno@lce:~$ mv arquivo.txt arquivo_curso.txt
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-59" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Terminal</h3>
+
+<p>Para <strong>remover</strong> um arquivo qualquer, usamos o <code>rm</code> novamente</p>
+
+<pre><code class="bash">aluno@lce:~$ rm arquivo_curso.txt
+</code></pre>
+
+<p>Para remover todos os arquivos de um diretório, mas sem remover o
+diretório em si também usamos o <code>*</code></p>
+
+<pre><code class="bash">aluno@lce:~$ rm curso_linux/*
+</code></pre>
+
+<div class="alert alert-info">
+<p>Novamente cuidado! O rm vai remover tudo sem nenhum aviso e sem
+ possibilidade de restauração!</p>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-60" style="background:;">
+  <hgroup>
+    <h2>Linux</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Alguns comandos úteis para arquivos de texto</h3>
+
+<pre><code class="bash"># mostra o tipo de arquivo, codificação de carecteres, ...
+aluno@lce:~$ file arquivo.txt 
+# imprime na tela todo o conteúdo do arquivo
+aluno@lce:~$ cat arquivo.txt 
+# imprime as 10 primeiras linhas
+aluno@lce:~$ head arquivo.txt 
+# imprime as 10 últimas linhas
+aluno@lce:~$ tail arquivo.txt 
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-61" style="background:;">
+  <hgroup>
+    <h2>Exercícios</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Visite os seguintes diretórios, utilizando o comando <code>cd</code>, use <code>pwd</code>
+para conferir o local e <code>ls</code> para listar o conteúdo
+
+<ul>
+<li><code>/home</code>, <code>/proc</code>, <code>/boot</code>, <code>/usr/bin</code></li>
+</ul></li>
+<li>Em <code>/home/aluno</code> crie um diretório com seu nome e
+
+<ol>
+<li>Entre nesse diretório e crie um novo diretório chamado
+<code>curso_linux</code></li>
+<li>Crie um arquivo de texto (<code>teste.txt</code>) com algum conteúdo</li>
+<li>Crie outro arquivo de texto oculto (<code>.oculto.txt</code>)</li>
+<li>Copie <code>teste.txt</code> para o seu diretório <code>curso_linux</code></li>
+<li>Copie <code>teste.txt</code> para o diretório <code>~/Documentos</code></li>
+<li>Renomeie <code>teste.txt</code> para <code>delete.txt</code></li>
+<li>Mova <code>delete.txt</code> para o diretório <code>curso_linux</code></li>
+<li>Remova o diretório <code>curso_linux</code></li>
+<li>O que sobrou no diretório com seu nome?</li>
+</ol></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-62" style="background:;">
+  <hgroup>
+    <h2>Desafio</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Baixar e instalar o Rgedit plugin</h3>
+
+<ol>
+<li>Baixar o código fonte em <a href="">http://rgedit.sourceforge.net</a></li>
+<li>Descompactar o arquivo pelo terminal
+
+<ul>
+<li>Dica: <code>tar -jxvf &lt;arquivo.tar.bz2&gt;</code></li>
+</ul></li>
+<li>Entre no diretório descompactado</li>
+<li>Abra o <code>ReadMe.txt</code> no <code>gedit</code> e leia as instruções
+
+<ul>
+<li>Dica: você está usando o gedit3 (verifique a versão pelo menu
+do prórpio programa)</li>
+</ul></li>
+<li>Abra o gedit, habilite o plugin (conforme descrito no <code>ReadMe.txt</code>) e
+tente rodar algum comando do R</li>
+</ol>
+
+<ul class = "build incremental">
+<li>Você está usando uma conta de usuário comum (<code>aluno</code>). Porque então
+conseguiu instalar alguma coisa no sistema??</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-63" style="background:;">
+  <hgroup>
+    <h3>Falta</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>Instalação do sistema</p>
+
+<ul>
+<li>Tipo de patições: primária, lógica, etc</li>
+<li>Sistemas de arquivos</li>
+<li>Problemas com windows 8</li>
+</ul>
+
+<p>Instalação de pacotes</p>
+
+<ul>
+<li>Central de software</li>
+<li>Synaptic</li>
+<li>apt</li>
+<li>Principais</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-64" style="background:;">
   <hgroup>
     <h3>sudo</h3>
   </hgroup>
@@ -1335,12 +1572,26 @@ fernando@kirk:~$ ls
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-58" style="background:;">
+<slide class="" id="slide-65" style="background:;">
   <hgroup>
-    <h3>Onde buscar ajuda (geral)</h3>
+    <h2>Onde buscar ajuda (geral)</h2>
   </hgroup>
   <article data-timings="">
-    <p>Links</p>
+    <p>Sites</p>
+
+<ul>
+<li>Google nunca falha</li>
+<li><a href="http://ubuntuforums.org">Ubuntu Forums</a></li>
+<li><a href="http://ubuntuforum-br.org">Ubuntu Forums Português</a></li>
+</ul>
+
+<p>Apostilas</p>
+
+<ul>
+<li><a href="http://www.guiafoca.org">Guia FOCA</a></li>
+<li><a href="http://www.inf.ufpr.br/nicolui/Docs/Livros/LinuxBasico">Linux Básico - PET Computação UFPR</a></li>
+<li><a href="http://pet.inf.ufpr.br/Apostilas/ApostilaLinux.pdf">Outra apostila do PET UFPR (em PDF)</a></li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -1490,7 +1741,7 @@ fernando@kirk:~$ ls
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='Linux'>
+        data-slide=24 title='Distribuições do Linux'>
          24
       </a>
     </li>
@@ -1646,7 +1897,7 @@ fernando@kirk:~$ ls
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=50 title='Tente a segunte sequência de comandos:'>
+        data-slide=50 title='Tente a seguinte sequência de comandos:'>
          50
       </a>
     </li>
@@ -1682,20 +1933,62 @@ fernando@kirk:~$ ls
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=56 title='Desafio'>
+        data-slide=56 title='Linux'>
          56
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=57 title='sudo'>
+        data-slide=57 title='Linux'>
          57
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=58 title='Onde buscar ajuda (geral)'>
+        data-slide=58 title='Linux'>
          58
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=59 title='Linux'>
+         59
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=60 title='Linux'>
+         60
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=61 title='Exercícios'>
+         61
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=62 title='Desafio'>
+         62
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=63 title='Falta'>
+         63
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=64 title='sudo'>
+         64
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=65 title='Onde buscar ajuda (geral)'>
+         65
       </a>
     </li>
   </ul>

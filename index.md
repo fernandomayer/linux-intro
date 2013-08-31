@@ -172,7 +172,7 @@ Linus Torvalds - Linux (1991)
 - OpenOffice
 - Firefox, Thunderbird
 - Google Chrome (no Linux é Chromium)
-- LaTeX
+- $\LaTeX$
 
 ---
 
@@ -340,11 +340,14 @@ $('#myslide').on('slideleave', function(){
 
 ---
 
-## Linux
-
 ### Distribuições do Linux
 
-Figura com vários logos
+Veja [Distrowatch](http://distrowatch.com)
+
+<div class="centered">
+<img src="assets/img/linux_grafico.jpg" width=80%/>
+</div>
+
 
 --- .segue .nobackground .dark
 
@@ -371,7 +374,8 @@ Figura com vários logos
 - Novas versões lançadas a cada 6 meses (em maio e outubro)
 	- Suporte (atualizações) mantido por 9 meses nas versões normais, e
       por 5 anos nas versões LTS (Long Term Support)
-- Central de programas com XXXX pacotes disponíveis
+- Central de programas com mais de 40000 pacotes disponíveis (incluindo
+  R, $\LaTeX$, $\ldots$)
 - Funciona "Live": através de um pen-drive ou DVD, sem necessidade de
   instalação
 - Diversos "sabores":
@@ -729,7 +733,7 @@ aluno@lce:~$ cd ~/Documentos
 
 ---
 
-### Tente a segunte sequência de comandos:
+### Tente a seguinte sequência de comandos:
 
 Um `#` é um comentário
 
@@ -766,7 +770,7 @@ aluno@lce:~$ cd -
 aluno@lce:~/Documentos$ pwd
 /home/aluno/Documentos
 ```
-
+<br>
 - `cd ..` volta um diretório acima (lembra do `..` no `ls -lah`?)
 - `cd -` volta para o último diretório visitado
 
@@ -779,11 +783,11 @@ aluno@lce:~/Documentos$ pwd
 Para **criar** um diretório, use o comando `mkdir` (*make directory*)
 
 ```bash
-fernando@kirk:~$ ls
-fernando@kirk:~$ mkdir curso_linux
-fernando@kirk:~$ ls
-fernando@kirk:~$ cd curso_linux
-fernando@kirk:~/curso_linux$ ls
+aluno@lce:~$ ls
+aluno@lce:~$ mkdir curso_linux
+aluno@lce:~$ ls
+aluno@lce:~$ cd curso_linux
+aluno@lce:~/curso_linux$ ls
 ```
 
 ---
@@ -809,7 +813,7 @@ fernando@kirk:~/curso_linux$ ls
 
 - Os nomes de diretórios e arquivos *podem* conter espaços (ex.: `curso
   linux`), mas você realmente não vai querer fazer isso
-  <i class="icon-smile icon-muted"></i>
+  <i class="icon-smile"></i>
 
 - Use o `<Tab>` para autocompletar comandos e nomes de arquivos/diretórios!
 
@@ -822,8 +826,8 @@ fernando@kirk:~/curso_linux$ ls
 Para **remover** um diretório, use o comando `rm` (*remove*)
 
 ```bash
-fernando@kirk:~$ rm -r curso_linux
-fernando@kirk:~$ ls
+aluno@lce:~$ rm -r curso_linux
+aluno@lce:~$ ls
 ```
 
 - A opção `-r` é necessária para remover recursivamente um diretório
@@ -839,14 +843,184 @@ fernando@kirk:~$ ls
 
 ### Terminal
 
+Para **criar** um arquivo de texto, podemos usar o gedit
 
+```bash
+aluno@lce:~$ mkdir curso_linux
+aluno@lce:~$ cd curso_linux/
+aluno@lce:~/curso_linux$ ls
+aluno@lce:~/curso_linux$ gedit arquivo.txt &
+```
+- Escreva alguma coisa, salve e feche o programa
+- Note o `&` no final do comando: ele serve para executar e retornar
+  para a linha de comando (caso contrário, o terminal ficaria "ocupado")
+<div class="alert alert-info">
+ <p>O comando `gedit` também pode ser usado para **abrir** arquivos de
+  texto já existentes</p>
+</div>
+
+---
+
+## Linux
+
+### Terminal
+
+Para **copiar** um arquivo usamos o `cp` (*copy-paste*) que tem a
+seguinte sintaxe
+
+```bash
+cp <arquivo original> <arquivo cópia>
+```
+Por exemplo, para copiar `arquivo.txt` de `/home/aluno/curso_linux` para
+`/home/aluno/Documentos`
+
+```bash
+aluno@lce:~/curso_linux$ cp arquivo.txt /home/aluno/Documentos
+```
+Note que qualquer um destes comandos faria a mesma coisa
+
+```bash
+cp arquivo.txt ~/Documentos
+cp arquivo.txt ../Documentos
+```
+
+---
+
+## Linux
+
+### Terminal
+
+Para copiar um arquivo de um diretório para o atual, por exemplo
+
+```bash
+aluno@lce:~/curso_linux$ cd ../Documentos
+aluno@lce:~/Documentos$ cp ~/curso_linux/arquivo.txt .
+```
+- Note que o ponto `.` no final representa o diretório atual
+
+Para copiar **todos** os arquivos de um diretório para outro
+
+```bash
+aluno@lce:~/Documentos$ cd
+aluno@lce:~$ cp curso_linux/* Downloads
+```
+- O asterisco `*` dentro de um diretório significa "tudo" que estiver
+  dentro dele
+
+---
+
+## Linux
+
+### Terminal
+
+Para **mover** um arquivo entre diretórios usamos o `mv` (*move*), que
+possui a mesma sintaxe e funciona da mesma forma que o `cp`. Por exemplo
+
+```bash
+aluno@lce:~$ mv curso_linux/arquivo.txt .
+```
+O comando `mv` também serve para **renomear** um arquivo, se for
+aplicado no mesmo diretório. Por exemplo, para renomear `arquivo.txt`
+para `arquivo_curso.txt`
+
+```bash
+aluno@lce:~$ mv arquivo.txt arquivo_curso.txt
+```
+
+---
+
+## Linux
+
+### Terminal
+
+Para **remover** um arquivo qualquer, usamos o `rm` novamente
+
+```bash
+aluno@lce:~$ rm arquivo_curso.txt
+```
+
+Para remover todos os arquivos de um diretório, mas sem remover o
+diretório em si também usamos o `*`
+
+```bash
+aluno@lce:~$ rm curso_linux/*
+```
+<div class="alert alert-info">
+<p>Novamente cuidado! O rm vai remover tudo sem nenhum aviso e sem
+ possibilidade de restauração!</p>
+</div>
+
+---
+
+## Linux
+
+### Alguns comandos úteis para arquivos de texto
+
+```bash
+# mostra o tipo de arquivo, codificação de carecteres, ...
+aluno@lce:~$ file arquivo.txt 
+# imprime na tela todo o conteúdo do arquivo
+aluno@lce:~$ cat arquivo.txt 
+# imprime as 10 primeiras linhas
+aluno@lce:~$ head arquivo.txt 
+# imprime as 10 últimas linhas
+aluno@lce:~$ tail arquivo.txt 
+```
+
+---
+
+## Exercícios
+
+1. Visite os seguintes diretórios, utilizando o comando `cd`, use `pwd`
+para conferir o local e `ls` para listar o conteúdo
+	- `/home`, `/proc`, `/boot`, `/usr/bin`
+2. Em `/home/aluno` crie um diretório com seu nome e
+	1. Entre nesse diretório e crie um novo diretório chamado
+      `curso_linux`
+	2. Crie um arquivo de texto (`teste.txt`) com algum conteúdo
+	- Crie outro arquivo de texto oculto (`.oculto.txt`)
+	- Copie `teste.txt` para o seu diretório `curso_linux`
+	- Copie `teste.txt` para o diretório `~/Documentos`
+	- Renomeie `teste.txt` para `delete.txt`
+	- Mova `delete.txt` para o diretório `curso_linux`
+	- Remova o diretório `curso_linux`
+	- O que sobrou no diretório com seu nome?
 
 ---
 
 ## Desafio
 
-### Baixar e instalar o Rgedit-plugin
+### Baixar e instalar o Rgedit plugin
 
+1. Baixar o código fonte em [http://rgedit.sourceforge.net]()
+2. Descompactar o arquivo pelo terminal
+	- Dica: `tar -jxvf <arquivo.tar.bz2>`
+3. Entre no diretório descompactado
+4. Abra o `ReadMe.txt` no `gedit` e leia as instruções
+	- Dica: você está usando o gedit3 (verifique a versão pelo menu
+      do prórpio programa)
+5. Abra o gedit, habilite o plugin (conforme descrito no `ReadMe.txt`) e
+   tente rodar algum comando do R
+
+>- Você está usando uma conta de usuário comum (`aluno`). Porque então
+	conseguiu instalar alguma coisa no sistema??
+
+---
+
+### Falta
+
+Instalação do sistema
+
+- Tipo de patições: primária, lógica, etc
+- Sistemas de arquivos
+- Problemas com windows 8
+
+Instalação de pacotes
+
+- Central de software
+- Synaptic
+- apt
+- Principais
 
 ---
 
@@ -858,6 +1032,16 @@ fernando@kirk:~$ ls
 
 ---
 
-### Onde buscar ajuda (geral)
+## Onde buscar ajuda (geral)
 
-Links
+Sites
+
+- Google nunca falha
+- [Ubuntu Forums](http://ubuntuforums.org)
+- [Ubuntu Forums Português](http://ubuntuforum-br.org)
+
+Apostilas
+
+- [Guia FOCA](http://www.guiafoca.org)
+- [Linux Básico - PET Computação UFPR](http://www.inf.ufpr.br/nicolui/Docs/Livros/LinuxBasico)
+- [Outra apostila do PET UFPR (em PDF)](http://pet.inf.ufpr.br/Apostilas/ApostilaLinux.pdf)
