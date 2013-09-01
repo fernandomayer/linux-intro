@@ -1005,6 +1005,62 @@ para conferir o local e `ls` para listar o conteúdo
 >- Você está usando uma conta de usuário comum (`aluno`). Porque então
 	conseguiu instalar alguma coisa no sistema??
 
+--- .segue .nobackground .dark
+
+## Instalação do Ubuntu
+
+---
+
+## Antes de tudo:
+
+### Faça um backup dos seus dados!
+
+### Se você planeja instalar lado-a-lado com o Windows, terá que fazer a desfragmentação da partição
+
+### Baixar a última versão do Ubuntu (13.04 codinome Raring Ringtail)
+
+- Entre em [http://ubuntu.c3sl.ufpr.br/releases/raring]()
+	  - Escolha a versão 32 bits para computadores antigos (com menos de
+        3 GB de RAM)
+	  - Escolha a versão 64 bits para computadores mais novos (com
+        Windows 8 ou com mais de 3 GB de RAM)
+- Gravar a imagem (`iso`) em um DVD ou criar um pen-drive
+
+---
+
+### Criando um pen-drive de inicialização
+
+- Iniciar o sistema por um pen-drive é mais rápido do que pelo DVD
+- Se for usar o Windows, é necessário baixar e instalar o
+  [Universal USB Installer](http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)
+	  - Siga as instruções do
+        [site do Ubuntu](http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-windows)
+- Se estiver usando um computador do Lab no Linux, abra o "Criador de
+  discos de inicialização" ou `usb-creator` (já instalado)
+
+### Para iniciar a instalação
+
+- Insira o pen-drive ou DVD, reinicie e espera até carregar o sistema
+	- Caso não entre, reinicie novamente e durante a inicialização
+      aperte `F12` ou `Esc` para escolher o dispositivo de inicialização
+
+---
+
+### Mas, antes de entrar na Matrix ...
+
+<div class="centered">
+<img src="assets/img/3d-matrix.jpg" width=70%/>
+</div>
+
+---
+
+## Tipos de partições
+
+
+---
+
+## Sistemas de arquivos
+
 ---
 
 ### Falta
