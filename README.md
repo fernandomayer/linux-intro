@@ -1,5 +1,8 @@
 # Introdução ao uso do Linux
 
+Material utilizado para o curso introdutório ao Linux, ministrado na
+ESALQ/USP, 02 e 03 de setembro, 2013.
+
 Este branch é o repositório dos slides utilizados no curso.
 
 Os slides foram criados com o pacote [Slidify](http://www.slidify.org) do R. É
