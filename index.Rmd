@@ -1162,9 +1162,9 @@ Dessa forma, se um disco possui 1 partição primária, 1 estendida, e
   em repositórios próprios do Ubuntu. Sempre instale os programas destes
   repositórios para garantir compatibilidade e segurança!
 
-- Abra a "Central de Software", procure e instale o `synaptic`
+- Abra a "Central de Programas", procure e instale o `synaptic`
 - O Synaptic é um gerenciador de pacotes mais eficiente e altamente
-  recomendado para uso no lugar da "Central de Software"
+  recomendado para uso no lugar da "Central de Programas"
 
 ---
 
@@ -1192,7 +1192,7 @@ Abra o Synaptic e instale os seguintes pacotes:
 - `texlive-full` para a distribuiçao $\TeX$Live completa
 - `texmaker` para edição dos arquivos `.tex`
 
-Procure o que mais quiser por ali
+Você pode procurar mais pocotes e instalar à medida que for necessário
 
 ---
 
