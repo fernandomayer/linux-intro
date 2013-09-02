@@ -180,9 +180,9 @@ Linus Torvalds - Linux (1991)
 
 ### Repositórios de software livre
 
-- GitHub [http://github.com]()
-- SourceForge [http://sourceforge.net]()
-- Google Code [http://code.google.com]()
+- GitHub [http://github.com](http://github.com)
+- SourceForge [http://sourceforge.net](http://sourceforge.net)
+- Google Code [http://code.google.com](http://code.google.com)
 
 ---
 
@@ -193,9 +193,9 @@ Linus Torvalds - Linux (1991)
 - Academia
 - Indústria
 - Governo
-    - [http://www.softwarelivre.gov.br]()
-    - [http://www.softwarepublico.gov.br]()
-    - [https://www.serpro.gov.br]()
+    - [http://www.softwarelivre.gov.br](http://www.softwarelivre.gov.br)
+    - [http://www.softwarepublico.gov.br](http://www.softwarepublico.gov.br)
+    - [https://www.serpro.gov.br](https://www.serpro.gov.br)
 
 --- .segue bg:green
 <br>
@@ -415,7 +415,7 @@ Aqui você também tem a opção de escolha!
 
 ### Procure, abra e mexa:
 
-- Firefox (entre em [http://fernandomayer.github.io/linux-intro]())
+- Firefox (entre em [http://fernandomayer.github.io/linux-intro](http://fernandomayer.github.io/linux-intro))
 - LibreOffice Writer
 - LibreOffice Calc
 - gedit
@@ -992,7 +992,7 @@ para conferir o local e `ls` para listar o conteúdo
 
 ### Baixar e instalar o Rgedit plugin
 
-1. Baixar o código fonte em [http://rgedit.sourceforge.net]()
+1. Baixar o código fonte em [http://rgedit.sourceforge.net](http://rgedit.sourceforge.net)
 2. Descompactar o arquivo pelo terminal
 	- Dica: `tar -jxvf <arquivo.tar.bz2>`
 3. Entre no diretório descompactado
@@ -1011,7 +1011,7 @@ para conferir o local e `ls` para listar o conteúdo
 
 ---
 
-## Antes de tudo:
+## Antes:
 
 ### Faça um backup dos seus dados!
 
@@ -1019,7 +1019,7 @@ para conferir o local e `ls` para listar o conteúdo
 
 ### Baixar a última versão do Ubuntu (13.04 codinome Raring Ringtail)
 
-- Entre em [http://ubuntu.c3sl.ufpr.br/releases/raring]()
+- Entre em [http://ubuntu.c3sl.ufpr.br/releases/raring](http://ubuntu.c3sl.ufpr.br/releases/raring)
 	  - Escolha a versão 32 bits para computadores antigos (com menos de
         3 GB de RAM)
 	  - Escolha a versão 64 bits para computadores mais novos (com
@@ -1058,7 +1058,7 @@ para conferir o local e `ls` para listar o conteúdo
 
 O particionamento de disco é o ato de dividir um disco rígido em
 múltiplas unidades, ou **partições**, fazendo com que cada unidade seja
-tratada como um disco $\rightarrow$ isto é o que possibilita que vários
+tratada como um disco. Isto é o que possibilita que vários
 sistemas operacionais sejam instalados em um mesmo disco. As partições
 podem ser
 
@@ -1192,7 +1192,7 @@ Abra o Synaptic e instale os seguintes pacotes:
 - `texlive-full` para a distribuiçao $\TeX$Live completa
 - `texmaker` para edição dos arquivos `.tex`
 
-Você pode procurar mais pocotes e instalar à medida que for necessário
+Você pode procurar mais pacotes e instalar à medida que for necessário
 
 ---
 
@@ -1270,20 +1270,20 @@ Continua...
 - Dentro do `/etc/apt/sources.list` adicione a seguinte linha, referente
   ao repositório CRAN
 
-```
+```bash
 deb http://brieger.esalq.usp.br/CRAN/bin/linux/ubuntu raring/
 ```
-- Para atualizar os pacotes
+- Para atualizar os pacotes (e reconhecer as novas versões)
 
 ```bash
 sudo apt-get update
 ```
-- E para instalar o R
+- E para instalar o R (também pode ser feito pelo Synaptic agora)
 
 ```bash
 sudo apt-get install r-base r-base-dev
 ```
-- Para abrir o R
+- Para abrir o R (no terminal)
 
 ```bash
 R
@@ -1297,28 +1297,36 @@ R
 Para usar o R de forma apropriada você pode escolher entre muitos
 editores como
 
-- Emacs com ESS (altamente recomendado!)
-- Rgedit plugin para o gedit (já vimos aqui)
-- Vim-R-plugin (para o editor `vim`)
+- [Emacs](http://www.gnu.org/software/emacs/) com
+  [ESS](http://ess.r-project.org/) (altamente recomendado!)
+- [Rgedit plugin](http://rgedit.sourceforge.net/) para o gedit (já vimos
+  aqui)
+- [Vim-R-plugin](http://www.vim.org/scripts/script.php?script_id=2628)
+  (para o editor `vim`)
 - Rstudio
 	- A versão do Rstudio para Ubuntu pode ser baixada em
-      [http://www.rstudio.com/ide/download/desktop]() como um arquivo
-      `.deb` (confira se a versão é 32-bit ou 64-bit)
+      [http://www.rstudio.com/ide/download/desktop](http://www.rstudio.com/ide/download/desktop)
+      como um arquivo `.deb` (confira se a versão é 32-bit ou 64-bit)
 	- Para instalar, clique duas vezes para abrir a "Central de
       Programas"
 
 
 ---
 
-## Onde buscar ajuda (geral)
+## Onde buscar ajuda
 
-Sites
+A comunidade Ubuntu/Linux já é muito grande e carrega o espírito do
+software livre de ajudar o vizinho. Por isso, uma busca no Google
+geralmente vai sanar suas dúvidas. Mesmo assim, se precisar perguntar
+alguns lugares são
 
-- Google nunca falha
+- [Ask Ubuntu](http://askubuntu.com/)
 - [Ubuntu Forums](http://ubuntuforums.org)
 - [Ubuntu Forums Português](http://ubuntuforum-br.org)
 
-Apostilas
+---
+
+## Material baseado (principalmente) em
 
 - [Guia FOCA](http://www.guiafoca.org)
 - [Linux Básico - PET Computação UFPR](http://www.inf.ufpr.br/nicolui/Docs/Livros/LinuxBasico)
