@@ -1619,41 +1619,79 @@ aperte <code>F12</code> ou <code>Esc</code> para escolher o dispositivo de inici
     <h2>Tipos de partições</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>O particionamento de disco é o ato de dividir um disco rígido em
+múltiplas unidades, ou <strong>partições</strong>, fazendo com que cada unidade seja
+tratada como um disco \(\rightarrow\) isto é o que possibilita que vários
+sistemas operacionais sejam instalados em um mesmo disco. As partições
+podem ser</p>
+
+<ul>
+<li><strong>Primárias</strong>: deve haver pelo menos uma, e no máximo quatro partições
+primárias em um disco</li>
+<li><strong>Estendidas</strong>: só pode haver uma partição estendida, que é tratada
+como uma partição primária. Serve para abrigar outras partições do
+tipo lógicas</li>
+<li><strong>Lógicas</strong>: são as partições que residem dentro das estendidas. Devem
+existir pelo menos uma e no máximo 12 partições lógicas dentro de
+uma estendida</li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-68" style="background:;">
   <hgroup>
-    <h2>Sistemas de arquivos</h2>
+    <h2>Tipos de partições</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>No Linux, as partições estão localizadas no <code>/dev/sda</code> (se houver mais
+de um disco será <code>/dev/sdb</code>, ...):</p>
+
+<ul>
+<li><code>/dev/sda1</code> até <code>/dev/sda4</code> são reservados para partições primárias</li>
+<li><code>/dev/sda5</code> até <code>/dev/sda16</code> são reservados para as partições lógicas</li>
+</ul>
+
+<blockquote>
+<p>Note que uma partição estendida ocupa o lugar de uma primária</p>
+</blockquote>
+
+<p>Dessa forma, se um disco possui 1 partição primária, 1 estendida, e
+3 lógicas:</p>
+
+<ul>
+<li><code>/dev/sda1</code> \(\rightarrow\) primária</li>
+<li><code>/dev/sda2</code> \(\rightarrow\) estendida
+
+<ul>
+<li><code>/dev/sda5</code> \(\rightarrow\) lógica</li>
+<li><code>/dev/sda6</code> \(\rightarrow\) lógica</li>
+<li><code>/dev/sda7</code> \(\rightarrow\) lógica</li>
+</ul></li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-69" style="background:;">
   <hgroup>
-    <h3>Falta</h3>
+    <h2>Tipos de partições</h2>
   </hgroup>
   <article data-timings="">
-    <p>Instalação do sistema</p>
+    <h3>A partição SWAP</h3>
 
 <ul>
-<li>Tipo de patições: primária, lógica, etc</li>
-<li>Sistemas de arquivos</li>
-<li>Problemas com windows 8</li>
-</ul>
-
-<p>Instalação de pacotes</p>
-
-<ul>
-<li>Central de software</li>
-<li>Synaptic</li>
-<li>apt</li>
-<li>Principais</li>
+<li>A SWAP é um tipo especial de partição no Linux</li>
+<li>O Linux divide a memória RAM em &quot;pedaços&quot; de memória, chamados de
+<em>páginas</em></li>
+<li>Quando a memória RAM fica lotada com estas páginas, o sistema usa este
+espaço no disco rígido (a SWAP) para armazenar este excesso de páginas
+(&quot;paginação&quot;)</li>
+<li>Isso faz com que o sistema não &quot;trave&quot; por falta de memória <i class="icon-thumbs-up"></i></li>
+<li>Normalmente é recomendado criar uma partição SWAP com o dobro de
+tamanho da memória RAM</li>
 </ul>
 
   </article>
@@ -1661,6 +1699,235 @@ aperte <code>F12</code> ou <code>Esc</code> para escolher o dispositivo de inici
 </slide>
 
 <slide class="" id="slide-70" style="background:;">
+  <hgroup>
+    <h2>Sistemas de arquivos</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Toda partição deve ter um sistema de arquivos</h3>
+
+<ul>
+<li>Um sistema de arquivos é uma forma de organização de dados, que
+especifica como o sistema operacional deve armazenar, ler e gravar</li>
+<li>No Windows os mais usados são: <code>fat32</code> e <code>ntfs</code></li>
+<li>No Linux existem mais opções como
+
+<ul>
+<li><code>Ext3</code>, <code>Ext4</code></li>
+<li><code>reiserFS</code></li>
+<li><code>XFS</code></li>
+</ul></li>
+<li>O mais utilizado (e provavelmente mais estável) é o <code>Ext4</code></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-71" style="background:;">
+  <hgroup>
+    <h3>Agora sim ...</h3>
+  </hgroup>
+  <article data-timings="">
+    <div class="centered">
+<img src="assets/img/3d-matrix.jpg" width=70%/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-72" style="background:;">
+  <hgroup>
+    <h2>Instalação</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Etapas</h3>
+
+<ol>
+<li>Rode o sistema pelo DVD ou pen-drive e vá em <strong>Experimentar Ubuntu</strong></li>
+<li>Abra o editor de partições <code>gparted</code> e veja como está seu HD
+
+<ul>
+<li>Se for instalar lado-a-lado com o Windows, redimensione (diminua)
+a partição</li>
+</ul></li>
+<li>Crie as partições conforme necessário
+
+<ul>
+<li>Lembre dos tipos de partições existentes</li>
+<li>Use <code>Ext4</code> para o sistema de arquivos</li>
+<li>Não esqueça da SWAP</li>
+</ul></li>
+<li>Clique no ícone para instalar o Ubuntu e siga os passos
+
+<ul>
+<li>Na tela <strong>Tipo de instalação</strong> selecione a <strong>opção avançada</strong></li>
+<li>Selecione a partição de instalação e clique em <strong>Change</strong> para
+selecionar o sistema de arquivos e o ponto de montagem (geralmente
+apenas o <code>/</code>)</li>
+</ul></li>
+<li>Preencha os dados necessários e bem vindo ao Ubuntu</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-73" style="background:;">
+  <hgroup>
+    <h2>Instalação</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>O que fazer após a instalação</h3>
+
+<p><strong>Importante!</strong> 99,9% dos softwares que você precisa estão disponíveis
+  em repositórios próprios do Ubuntu. Sempre instale os programas destes
+  repositórios para garantir compatibilidade e segurança!</p>
+
+<ul>
+<li>Abra a &quot;Central de Software&quot;, procure e instale o <code>synaptic</code></li>
+<li>O Synaptic é um gerenciador de pacotes mais eficiente e altamente
+recomendado para uso no lugar da &quot;Central de Software&quot;</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-74" style="background:;">
+  <hgroup>
+    <h2>Instalação</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>O que fazer após a instalação</h3>
+
+<p>Entre nas configurações e &quot;Programas e atualizações&quot;. Certifique-se
+que todas as opções da aba &quot;Aplicativos Ubuntu&quot; estejam marcados</p>
+
+<div class="centered">
+<img src="assets/img/programas.png" width=50%/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-75" style="background:;">
+  <hgroup>
+    <h2>Instalação</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>O que fazer após a instalação</h3>
+
+<p>Abra o Synaptic e instale os seguintes pacotes:</p>
+
+<ul>
+<li><code>default-jdk</code> e <code>icedtea-plugin</code> para instalar Java (BB, ...)</li>
+<li><code>chromium-browser</code> para o Chromium</li>
+<li><code>texlive-full</code> para a distribuiçao $\TeX$Live completa</li>
+<li><code>texmaker</code> para edição dos arquivos <code>.tex</code></li>
+</ul>
+
+<p>Procure o que mais quiser por ali</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-76" style="background:;">
+  <hgroup>
+    <h2>Instalação</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>O que fazer após a instalação</h3>
+
+<p>Dropbox</p>
+
+<ul>
+<li>O driver para o Dropbox é proprietário e não está nos repositórios do
+Ubuntu</li>
+<li>É um dos 0,01% dos programas que precisam ser baixados e instalados
+separadamente</li>
+<li>Entre no
+<a href="https://www.dropbox.com/install?os=lnx">site do Dropbox para Linux</a> e
+escolha a versão 32-bit ou 64-bit para Ubuntu</li>
+<li>Você vai baixar um arquivo <code>.deb</code>
+
+<ul>
+<li>Clicando 2 vezes abrirá a &quot;Central de Programas&quot; e você terá a
+opção de instalar</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-77" style="background:;">
+  <hgroup>
+    <h2>Instalação</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>O que fazer após a instalação</h3>
+
+<p><strong>R</strong></p>
+
+<p>Nos respositórios do Ubuntu ja existe o R (pacote <code>r-base</code>), mas sempre
+em uma versão mais antiga. Para instalar e manter sempre a última versão
+do R basta adicionar um repositório do CRAN.</p>
+
+<ul>
+<li>As instruções estão na própria
+<a href="http://cran.r-project.org/bin/linux/ubuntu">página do CRAN para Ubuntu</a></li>
+<li>Você pode adicionar o repositório usando a interface gráfica
+
+<ul>
+<li>Entre nas configurações e clique em &quot;Programas e atualizações&quot;</li>
+<li>Na aba &quot;Outros programas&quot;, clique em &quot;Adicionar&quot; e cole o
+repositório conforme mostrado na página do CRAN</li>
+</ul></li>
+<li><strong>Mas</strong> é muito mais divertido fazer isso pelo <strong>terminal</strong>...</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-78" style="background:;">
+  <hgroup>
+    <h2>R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Para adicionar o repositório do CRAN com a última versão do R para
+Ubuntu, no terminal</p>
+
+<ul>
+<li>Abra (com o <code>gedit</code>) o arquivo <code>/etc/apt/sources.list</code></li>
+</ul>
+
+<pre><code class="bash">sudo gedit /etc/apt/sources.list &amp;
+</code></pre>
+
+<ul>
+<li>Esse arquivo contém o endereço de todos os repositórios de software</li>
+<li>Note o comando <code>sudo</code> antes do <code>gedit</code>
+
+<ul>
+<li>Como o arquivo <code>sources.list</code> não está no seu <code>/home</code>, é
+necessário ser um super-usuário para alterá-lo</li>
+<li>O <code>sudo</code> (<em>super-user do</em>) permite que você execute apenas um
+comando específico como super-usuário (porque você é um <em>sudoer</em>
+no sistema)</li>
+</ul></li>
+</ul>
+
+<p>Continua...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-79" style="background:;">
   <hgroup>
     <h3>sudo</h3>
   </hgroup>
@@ -1675,7 +1942,74 @@ aperte <code>F12</code> ou <code>Esc</code> para escolher o dispositivo de inici
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-71" style="background:;">
+<slide class="" id="slide-80" style="background:;">
+  <hgroup>
+    <h2>R</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Dentro do <code>/etc/apt/sources.list</code> adicione a seguinte linha, referente
+ao repositório CRAN</li>
+</ul>
+
+<pre><code>deb http://brieger.esalq.usp.br/CRAN/bin/linux/ubuntu raring/
+</code></pre>
+
+<ul>
+<li>Para atualizar os pacotes</li>
+</ul>
+
+<pre><code class="bash">sudo apt-get update
+</code></pre>
+
+<ul>
+<li>E para instalar o R</li>
+</ul>
+
+<pre><code class="bash">sudo apt-get install r-base r-base-dev
+</code></pre>
+
+<ul>
+<li>Para abrir o R</li>
+</ul>
+
+<pre><code class="bash">R
+</code></pre>
+
+<p><strong>Sim, o R é um programa que roda no terminal</strong></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-81" style="background:;">
+  <hgroup>
+    <h2>R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Para usar o R de forma apropriada você pode escolher entre muitos
+editores como</p>
+
+<ul>
+<li>Emacs com ESS (altamente recomendado!)</li>
+<li>Rgedit plugin para o gedit (já vimos aqui)</li>
+<li>Vim-R-plugin (para o editor <code>vim</code>)</li>
+<li>Rstudio
+
+<ul>
+<li>A versão do Rstudio para Ubuntu pode ser baixada em
+<a href="">http://www.rstudio.com/ide/download/desktop</a> como um arquivo
+<code>.deb</code> (confira se a versão é 32-bit ou 64-bit)</li>
+<li>Para instalar, clique duas vezes para abrir a &quot;Central de
+Programas&quot;</li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-82" style="background:;">
   <hgroup>
     <h2>Onde buscar ajuda (geral)</h2>
   </hgroup>
@@ -2108,26 +2442,92 @@ aperte <code>F12</code> ou <code>Esc</code> para escolher o dispositivo de inici
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=68 title='Sistemas de arquivos'>
+        data-slide=68 title='Tipos de partições'>
          68
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=69 title='Falta'>
+        data-slide=69 title='Tipos de partições'>
          69
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=70 title='sudo'>
+        data-slide=70 title='Sistemas de arquivos'>
          70
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=71 title='Onde buscar ajuda (geral)'>
+        data-slide=71 title='Agora sim ...'>
          71
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=72 title='Instalação'>
+         72
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=73 title='Instalação'>
+         73
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=74 title='Instalação'>
+         74
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=75 title='Instalação'>
+         75
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=76 title='Instalação'>
+         76
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=77 title='Instalação'>
+         77
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=78 title='R'>
+         78
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=79 title='sudo'>
+         79
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=80 title='R'>
+         80
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=81 title='R'>
+         81
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=82 title='Onde buscar ajuda (geral)'>
+         82
       </a>
     </li>
   </ul>

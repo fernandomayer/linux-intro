@@ -1056,27 +1056,204 @@ para conferir o local e `ls` para listar o conteúdo
 
 ## Tipos de partições
 
+O particionamento de disco é o ato de dividir um disco rígido em
+múltiplas unidades, ou **partições**, fazendo com que cada unidade seja
+tratada como um disco $\rightarrow$ isto é o que possibilita que vários
+sistemas operacionais sejam instalados em um mesmo disco. As partições
+podem ser
+
+- **Primárias**: deve haver pelo menos uma, e no máximo quatro partições
+    primárias em um disco
+- **Estendidas**: só pode haver uma partição estendida, que é tratada
+    como uma partição primária. Serve para abrigar outras partições do
+    tipo lógicas
+- **Lógicas**: são as partições que residem dentro das estendidas. Devem
+    existir pelo menos uma e no máximo 12 partições lógicas dentro de
+    uma estendida
+
+---
+
+## Tipos de partições
+
+No Linux, as partições estão localizadas no `/dev/sda` (se houver mais
+de um disco será `/dev/sdb`, ...):
+
+- `/dev/sda1` até `/dev/sda4` são reservados para partições primárias
+- `/dev/sda5` até `/dev/sda16` são reservados para as partições lógicas
+
+> Note que uma partição estendida ocupa o lugar de uma primária
+
+Dessa forma, se um disco possui 1 partição primária, 1 estendida, e
+3 lógicas:
+
+- `/dev/sda1` $\rightarrow$ primária
+- `/dev/sda2` $\rightarrow$ estendida
+	- `/dev/sda5` $\rightarrow$ lógica
+	- `/dev/sda6` $\rightarrow$ lógica
+	- `/dev/sda7` $\rightarrow$ lógica
+
+---
+
+## Tipos de partições
+
+### A partição SWAP
+
+- A SWAP é um tipo especial de partição no Linux
+- O Linux divide a memória RAM em "pedaços" de memória, chamados de
+*páginas*
+- Quando a memória RAM fica lotada com estas páginas, o sistema usa este
+  espaço no disco rígido (a SWAP) para armazenar este excesso de páginas
+  ("paginação")
+- Isso faz com que o sistema não "trave" por falta de memória <i class="icon-thumbs-up"></i>
+- Normalmente é recomendado criar uma partição SWAP com o dobro de
+  tamanho da memória RAM
 
 ---
 
 ## Sistemas de arquivos
 
+### Toda partição deve ter um sistema de arquivos
+
+- Um sistema de arquivos é uma forma de organização de dados, que
+  especifica como o sistema operacional deve armazenar, ler e gravar
+- No Windows os mais usados são: `fat32` e `ntfs`
+- No Linux existem mais opções como
+	- `Ext3`, `Ext4`
+	- `reiserFS`
+	- `XFS`
+- O mais utilizado (e provavelmente mais estável) é o `Ext4`
+
 ---
 
-### Falta
+### Agora sim ...
 
-Instalação do sistema
+<div class="centered">
+<img src="assets/img/3d-matrix.jpg" width=70%/>
+</div>
 
-- Tipo de patições: primária, lógica, etc
-- Sistemas de arquivos
-- Problemas com windows 8
+---
 
-Instalação de pacotes
+## Instalação
 
-- Central de software
-- Synaptic
-- apt
-- Principais
+### Etapas
+
+1. Rode o sistema pelo DVD ou pen-drive e vá em **Experimentar Ubuntu**
+2. Abra o editor de partições `gparted` e veja como está seu HD
+	- Se for instalar lado-a-lado com o Windows, redimensione (diminua)
+      a partição
+3. Crie as partições conforme necessário
+    - Lembre dos tipos de partições existentes
+	- Use `Ext4` para o sistema de arquivos
+	- Não esqueça da SWAP
+4. Clique no ícone para instalar o Ubuntu e siga os passos
+    - Na tela **Tipo de instalação** selecione a **opção avançada**
+	- Selecione a partição de instalação e clique em **Change** para
+      selecionar o sistema de arquivos e o ponto de montagem (geralmente
+      apenas o `/`)
+5. Preencha os dados necessários e bem vindo ao Ubuntu
+
+---
+
+## Instalação
+
+### O que fazer após a instalação
+
+**Importante!** 99,9% dos softwares que você precisa estão disponíveis
+  em repositórios próprios do Ubuntu. Sempre instale os programas destes
+  repositórios para garantir compatibilidade e segurança!
+
+- Abra a "Central de Software", procure e instale o `synaptic`
+- O Synaptic é um gerenciador de pacotes mais eficiente e altamente
+  recomendado para uso no lugar da "Central de Software"
+
+---
+
+## Instalação
+
+### O que fazer após a instalação
+
+Entre nas configurações e "Programas e atualizações". Certifique-se
+que todas as opções da aba "Aplicativos Ubuntu" estejam marcados
+
+<div class="centered">
+<img src="assets/img/programas.png" width=50%/>
+</div>
+
+---
+
+## Instalação
+
+### O que fazer após a instalação
+
+Abra o Synaptic e instale os seguintes pacotes:
+
+- `default-jdk` e `icedtea-plugin` para instalar Java (BB, ...)
+- `chromium-browser` para o Chromium
+- `texlive-full` para a distribuiçao $\TeX$Live completa
+- `texmaker` para edição dos arquivos `.tex`
+
+Procure o que mais quiser por ali
+
+---
+
+## Instalação
+
+### O que fazer após a instalação
+
+Dropbox
+
+- O driver para o Dropbox é proprietário e não está nos repositórios do
+  Ubuntu
+- É um dos 0,01% dos programas que precisam ser baixados e instalados
+  separadamente
+- Entre no
+  [site do Dropbox para Linux](https://www.dropbox.com/install?os=lnx) e
+  escolha a versão 32-bit ou 64-bit para Ubuntu
+- Você vai baixar um arquivo `.deb`
+	- Clicando 2 vezes abrirá a "Central de Programas" e você terá a
+      opção de instalar
+
+---
+
+## Instalação
+
+### O que fazer após a instalação
+
+**R**
+
+Nos respositórios do Ubuntu ja existe o R (pacote `r-base`), mas sempre
+em uma versão mais antiga. Para instalar e manter sempre a última versão
+do R basta adicionar um repositório do CRAN.
+
+- As instruções estão na própria
+  [página do CRAN para Ubuntu](http://cran.r-project.org/bin/linux/ubuntu)
+- Você pode adicionar o repositório usando a interface gráfica
+	- Entre nas configurações e clique em "Programas e atualizações"
+	- Na aba "Outros programas", clique em "Adicionar" e cole o
+      repositório conforme mostrado na página do CRAN
+- **Mas** é muito mais divertido fazer isso pelo **terminal**...
+
+---
+
+## R
+
+Para adicionar o repositório do CRAN com a última versão do R para
+Ubuntu, no terminal
+
+- Abra (com o `gedit`) o arquivo `/etc/apt/sources.list`
+
+```bash
+sudo gedit /etc/apt/sources.list &
+```
+- Esse arquivo contém o endereço de todos os repositórios de software
+- Note o comando `sudo` antes do `gedit`
+	- Como o arquivo `sources.list` não está no seu `/home`, é
+      necessário ser um super-usuário para alterá-lo
+	- O `sudo` (*super-user do*) permite que você execute apenas um
+      comando específico como super-usuário (porque você é um *sudoer*
+      no sistema)
+
+Continua...
 
 ---
 
@@ -1085,6 +1262,51 @@ Instalação de pacotes
 <div class="centered">
 <img src="assets/img/sandwich.png"/>
 </div>
+
+---
+
+## R
+
+- Dentro do `/etc/apt/sources.list` adicione a seguinte linha, referente
+  ao repositório CRAN
+
+```
+deb http://brieger.esalq.usp.br/CRAN/bin/linux/ubuntu raring/
+```
+- Para atualizar os pacotes
+
+```bash
+sudo apt-get update
+```
+- E para instalar o R
+
+```bash
+sudo apt-get install r-base r-base-dev
+```
+- Para abrir o R
+
+```bash
+R
+```
+**Sim, o R é um programa que roda no terminal**
+
+---
+
+## R
+
+Para usar o R de forma apropriada você pode escolher entre muitos
+editores como
+
+- Emacs com ESS (altamente recomendado!)
+- Rgedit plugin para o gedit (já vimos aqui)
+- Vim-R-plugin (para o editor `vim`)
+- Rstudio
+	- A versão do Rstudio para Ubuntu pode ser baixada em
+      [http://www.rstudio.com/ide/download/desktop]() como um arquivo
+      `.deb` (confira se a versão é 32-bit ou 64-bit)
+	- Para instalar, clique duas vezes para abrir a "Central de
+      Programas"
+
 
 ---
 
