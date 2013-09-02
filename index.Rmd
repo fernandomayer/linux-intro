@@ -41,16 +41,30 @@ em {
 
 ### Use <i class="icon-arrow-left"> &nbsp; </i><i class="icon-arrow-right"></i> para navegar
 
----
+--- &twocol
 
 ## Plano do curso
 
-* Software Livre
-* Características do Linux
-* Principais distribuições
-* Contas de usuários
-* Comandos básicos
-* `...`
+*** =left
+
+- Software Livre
+- O Sistema Operacional GNU/Linux
+	- Sistema Operacional
+	- Linux
+		- Características
+		- Principais distribuições
+			- Ubuntu
+		- GUIs (interfaces gráficas)
+		- Estrutura de diretórios
+		- Contas de usuários
+		- O Terminal
+
+*** =right
+
+- Instalação do Ubuntu
+	- Tipos de partições
+	- Sistemas de arquivos
+	- O que fazer depois da instalação
 
 --- .segue .nobackground .dark
 
