@@ -78,7 +78,7 @@ em {
 
 <h3>Melhor visualizado com <a href="http://www.chromium.org">Chromium</a> (ou <a href="https://www.google.com/chrome">Google Chrome</a>)</h3>
 
-<h3>Código-fonte disponível no <a href="https://github.com/fernandomayer/linux-intro/tree/gh-pages">GitHub</a></h3>
+<h3>Código-fonte disponível no <a href="https://github.com/fernandomayer/linux-intro">GitHub</a></h3>
 
 <h3>Pressione &quot;o&quot; para visualizar miniaturas</h3>
 
@@ -902,12 +902,12 @@ do Linux</li>
   <article data-timings="">
     <h3>Abra um terminal (na GUI):</h3>
 
-<pre><code class="bash">aluno@lce:~$
+<pre><code class="bash">aluno@ubuntu:~$
 </code></pre>
 
 <ul>
 <li>Tudo que está antes de <code>:</code> é o usuário logado (<code>aluno</code>) e o nome da
-máquina (<code>lce</code>)</li>
+máquina (<code>ubuntu</code>)</li>
 <li>Depois de <code>:</code> fica o diretório atual
 
 <ul>
@@ -938,7 +938,7 @@ máquina (<code>lce</code>)</li>
 abra a página de ajuda com o <code>man</code>. Por exemplo,</li>
 </ul>
 
-<pre><code class="bash">aluno@lce:~$ man ls
+<pre><code class="bash">aluno@ubuntu:~$ man ls
 </code></pre>
 
 <ul>
@@ -947,7 +947,7 @@ abra a página de ajuda com o <code>man</code>. Por exemplo,</li>
 <code>-</code>, e com um espaço. Por exemplo</li>
 </ul>
 
-<pre><code class="bash">aluno@lce:~$ ls -l
+<pre><code class="bash">aluno@ubuntu:~$ ls -l
 </code></pre>
 
 <ul>
@@ -968,7 +968,7 @@ lista</li>
 
 <p>Mais opções podem ser passadas ao mesmo tempo. Por exemplo</p>
 
-<pre><code class="bash">aluno@lce:~$ ls -lah
+<pre><code class="bash">aluno@ubuntu:~$ ls -lah
 </code></pre>
 
 <p>Estas três opções juntas fazem com que o <code>ls</code>:</p>
@@ -1175,20 +1175,20 @@ permissões de usuário (dono), do grupo, e demais usuários</li>
 
 <p>Para mudar de diretório, use o comando <code>cd</code> (<em>change directory</em>)</p>
 
-<pre><code class="bash">aluno@lce:~$ cd Documentos
-aluno@lce:~/Documentos$
+<pre><code class="bash">aluno@ubuntu:~$ cd Documentos
+aluno@ubuntu:~/Documentos$
 </code></pre>
 
 <p>Note que <code>Documentos</code> é um diretório que está em <code>/home/aluno</code>. Como
 você já está em <code>/home/aluno</code> não é necessário especificar todo o
 caminho novamente, mas esse comando é equivalente a</p>
 
-<pre><code class="bash">aluno@lce:~$ cd /home/aluno/Documentos
+<pre><code class="bash">aluno@ubuntu:~$ cd /home/aluno/Documentos
 </code></pre>
 
 <p>Ou</p>
 
-<pre><code class="bash">aluno@lce:~$ cd ~/Documentos
+<pre><code class="bash">aluno@ubuntu:~$ cd ~/Documentos
 </code></pre>
 
   </article>
@@ -1228,14 +1228,14 @@ ls
     <h3>Agora veja</h3>
   </hgroup>
   <article data-timings="">
-    <pre><code class="bash">aluno@lce:~$ cd Documentos
-aluno@lce:~/Documentos$ pwd
+    <pre><code class="bash">aluno@ubuntu:~$ cd Documentos
+aluno@ubuntu:~/Documentos$ pwd
 /home/aluno/Documentos
-aluno@lce:~/Documentos$ cd ..
-aluno@lce:~$ pwd
+aluno@ubuntu:~/Documentos$ cd ..
+aluno@ubuntu:~$ pwd
 /home/aluno
-aluno@lce:~$ cd -
-aluno@lce:~/Documentos$ pwd
+aluno@ubuntu:~$ cd -
+aluno@ubuntu:~/Documentos$ pwd
 /home/aluno/Documentos
 </code></pre>
 
@@ -1259,11 +1259,11 @@ aluno@lce:~/Documentos$ pwd
 
 <p>Para <strong>criar</strong> um diretório, use o comando <code>mkdir</code> (<em>make directory</em>)</p>
 
-<pre><code class="bash">aluno@lce:~$ ls
-aluno@lce:~$ mkdir curso_linux
-aluno@lce:~$ ls
-aluno@lce:~$ cd curso_linux
-aluno@lce:~/curso_linux$ ls
+<pre><code class="bash">aluno@ubuntu:~$ ls
+aluno@ubuntu:~$ mkdir curso_linux
+aluno@ubuntu:~$ ls
+aluno@ubuntu:~$ cd curso_linux
+aluno@ubuntu:~/curso_linux$ ls
 </code></pre>
 
   </article>
@@ -1315,8 +1315,8 @@ linux</code>), mas você realmente não vai querer fazer isso
 
 <p>Para <strong>remover</strong> um diretório, use o comando <code>rm</code> (<em>remove</em>)</p>
 
-<pre><code class="bash">aluno@lce:~$ rm -r curso_linux
-aluno@lce:~$ ls
+<pre><code class="bash">aluno@ubuntu:~$ rm -r curso_linux
+aluno@ubuntu:~$ ls
 </code></pre>
 
 <ul>
@@ -1341,10 +1341,10 @@ aluno@lce:~$ ls
 
 <p>Para <strong>criar</strong> um arquivo de texto, podemos usar o gedit</p>
 
-<pre><code class="bash">aluno@lce:~$ mkdir curso_linux
-aluno@lce:~$ cd curso_linux/
-aluno@lce:~/curso_linux$ ls
-aluno@lce:~/curso_linux$ gedit arquivo.txt &amp;
+<pre><code class="bash">aluno@ubuntu:~$ mkdir curso_linux
+aluno@ubuntu:~$ cd curso_linux/
+aluno@ubuntu:~/curso_linux$ ls
+aluno@ubuntu:~/curso_linux$ gedit arquivo.txt &amp;
 </code></pre>
 
 <ul>
@@ -1377,7 +1377,7 @@ seguinte sintaxe</p>
 <p>Por exemplo, para copiar <code>arquivo.txt</code> de <code>/home/aluno/curso_linux</code> para
 <code>/home/aluno/Documentos</code></p>
 
-<pre><code class="bash">aluno@lce:~/curso_linux$ cp arquivo.txt /home/aluno/Documentos
+<pre><code class="bash">aluno@ubuntu:~/curso_linux$ cp arquivo.txt /home/aluno/Documentos
 </code></pre>
 
 <p>Note que qualquer um destes comandos faria a mesma coisa</p>
@@ -1399,8 +1399,8 @@ cp arquivo.txt ../Documentos
 
 <p>Para copiar um arquivo de um diretório para o atual, por exemplo</p>
 
-<pre><code class="bash">aluno@lce:~/curso_linux$ cd ../Documentos
-aluno@lce:~/Documentos$ cp ~/curso_linux/arquivo.txt .
+<pre><code class="bash">aluno@ubuntu:~/curso_linux$ cd ../Documentos
+aluno@ubuntu:~/Documentos$ cp ~/curso_linux/arquivo.txt .
 </code></pre>
 
 <ul>
@@ -1409,8 +1409,8 @@ aluno@lce:~/Documentos$ cp ~/curso_linux/arquivo.txt .
 
 <p>Para copiar <strong>todos</strong> os arquivos de um diretório para outro</p>
 
-<pre><code class="bash">aluno@lce:~/Documentos$ cd
-aluno@lce:~$ cp curso_linux/* Downloads
+<pre><code class="bash">aluno@ubuntu:~/Documentos$ cd
+aluno@ubuntu:~$ cp curso_linux/* Downloads
 </code></pre>
 
 <ul>
@@ -1432,14 +1432,14 @@ dentro dele</li>
 <p>Para <strong>mover</strong> um arquivo entre diretórios usamos o <code>mv</code> (<em>move</em>), que
 possui a mesma sintaxe e funciona da mesma forma que o <code>cp</code>. Por exemplo</p>
 
-<pre><code class="bash">aluno@lce:~$ mv curso_linux/arquivo.txt .
+<pre><code class="bash">aluno@ubuntu:~$ mv curso_linux/arquivo.txt .
 </code></pre>
 
 <p>O comando <code>mv</code> também serve para <strong>renomear</strong> um arquivo, se for
 aplicado no mesmo diretório. Por exemplo, para renomear <code>arquivo.txt</code>
 para <code>arquivo_curso.txt</code></p>
 
-<pre><code class="bash">aluno@lce:~$ mv arquivo.txt arquivo_curso.txt
+<pre><code class="bash">aluno@ubuntu:~$ mv arquivo.txt arquivo_curso.txt
 </code></pre>
 
   </article>
@@ -1455,13 +1455,13 @@ para <code>arquivo_curso.txt</code></p>
 
 <p>Para <strong>remover</strong> um arquivo qualquer, usamos o <code>rm</code> novamente</p>
 
-<pre><code class="bash">aluno@lce:~$ rm arquivo_curso.txt
+<pre><code class="bash">aluno@ubuntu:~$ rm arquivo_curso.txt
 </code></pre>
 
 <p>Para remover todos os arquivos de um diretório, mas sem remover o
 diretório em si também usamos o <code>*</code></p>
 
-<pre><code class="bash">aluno@lce:~$ rm curso_linux/*
+<pre><code class="bash">aluno@ubuntu:~$ rm curso_linux/*
 </code></pre>
 
 <div class="alert alert-info">
@@ -1481,13 +1481,13 @@ diretório em si também usamos o <code>*</code></p>
     <h3>Alguns comandos úteis para arquivos de texto</h3>
 
 <pre><code class="bash"># mostra o tipo de arquivo, codificação de carecteres, ...
-aluno@lce:~$ file arquivo.txt 
+aluno@ubuntu:~$ file arquivo.txt 
 # imprime na tela todo o conteúdo do arquivo
-aluno@lce:~$ cat arquivo.txt 
+aluno@ubuntu:~$ cat arquivo.txt 
 # imprime as 10 primeiras linhas
-aluno@lce:~$ head arquivo.txt 
+aluno@ubuntu:~$ head arquivo.txt 
 # imprime as 10 últimas linhas
-aluno@lce:~$ tail arquivo.txt 
+aluno@ubuntu:~$ tail arquivo.txt 
 </code></pre>
 
   </article>
@@ -1528,6 +1528,31 @@ para conferir o local e <code>ls</code> para listar o conteúdo
 
 <slide class="" id="slide-62" style="background:;">
   <hgroup>
+    <h3>Resolução do exercício 2</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>Assumindo que você está em <code>/home/aluno</code> a sequência de comandos seria </p>
+
+<pre><code class="bash">mkdir fernando
+cd fernando
+mkdir curso_linux
+gedit teste.txt &amp;
+gedit .oculto.txt &amp;
+cp teste.txt curso_linux
+cp teste.txt ~/Documentos
+mv teste.txt delete.txt
+mv delete.txt curso_linux
+rm -r curso_linux
+ls -la
+# deve sobrar apenas .oculto.txt
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-63" style="background:;">
+  <hgroup>
     <h2>Desafio</h2>
   </hgroup>
   <article data-timings="">
@@ -1560,7 +1585,7 @@ conseguiu instalar alguma coisa no sistema??</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="segue nobackground dark" id="slide-63" style="background:;">
+<slide class="segue nobackground dark" id="slide-64" style="background:;">
   <hgroup>
     <h2>Instalação do Ubuntu</h2>
   </hgroup>
@@ -1570,7 +1595,7 @@ conseguiu instalar alguma coisa no sistema??</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-64" style="background:;">
+<slide class="" id="slide-65" style="background:;">
   <hgroup>
     <h2>Antes:</h2>
   </hgroup>
@@ -1597,7 +1622,7 @@ Windows 8 ou com mais de 3 GB de RAM)</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-65" style="background:;">
+<slide class="" id="slide-66" style="background:;">
   <hgroup>
     <h3>Criando um pen-drive de inicialização</h3>
   </hgroup>
@@ -1630,7 +1655,7 @@ aperte <code>F12</code> ou <code>Esc</code> para escolher o dispositivo de inici
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-66" style="background:;">
+<slide class="" id="slide-67" style="background:;">
   <hgroup>
     <h3>Mas, antes de entrar na Matrix ...</h3>
   </hgroup>
@@ -1643,7 +1668,7 @@ aperte <code>F12</code> ou <code>Esc</code> para escolher o dispositivo de inici
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-67" style="background:;">
+<slide class="" id="slide-68" style="background:;">
   <hgroup>
     <h2>Tipos de partições</h2>
   </hgroup>
@@ -1669,7 +1694,7 @@ uma estendida</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-68" style="background:;">
+<slide class="" id="slide-69" style="background:;">
   <hgroup>
     <h2>Tipos de partições</h2>
   </hgroup>
@@ -1704,7 +1729,7 @@ de um disco será <code>/dev/sdb</code>, ...):</p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-69" style="background:;">
+<slide class="" id="slide-70" style="background:;">
   <hgroup>
     <h2>Tipos de partições</h2>
   </hgroup>
@@ -1727,7 +1752,7 @@ tamanho da memória RAM</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-70" style="background:;">
+<slide class="" id="slide-71" style="background:;">
   <hgroup>
     <h2>Sistemas de arquivos</h2>
   </hgroup>
@@ -1752,7 +1777,7 @@ especifica como o sistema operacional deve armazenar, ler e gravar</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-71" style="background:;">
+<slide class="" id="slide-72" style="background:;">
   <hgroup>
     <h3>Agora sim ...</h3>
   </hgroup>
@@ -1765,7 +1790,7 @@ especifica como o sistema operacional deve armazenar, ler e gravar</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-72" style="background:;">
+<slide class="" id="slide-73" style="background:;">
   <hgroup>
     <h2>Instalação</h2>
   </hgroup>
@@ -1802,7 +1827,7 @@ apenas o <code>/</code>)</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-73" style="background:;">
+<slide class="" id="slide-74" style="background:;">
   <hgroup>
     <h2>Instalação</h2>
   </hgroup>
@@ -1823,7 +1848,7 @@ recomendado para uso no lugar da &quot;Central de Programas&quot;</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-74" style="background:;">
+<slide class="" id="slide-75" style="background:;">
   <hgroup>
     <h2>Instalação</h2>
   </hgroup>
@@ -1831,17 +1856,17 @@ recomendado para uso no lugar da &quot;Central de Programas&quot;</li>
     <h3>O que fazer após a instalação</h3>
 
 <p>Entre nas configurações e &quot;Programas e atualizações&quot;. Certifique-se
-que todas as opções da aba &quot;Aplicativos Ubuntu&quot; estejam marcados</p>
+que todas as opções da aba &quot;Outros programas&quot; estejam marcados</p>
 
 <div class="centered">
-<img src="assets/img/programas.png" width=50%/>
+<img src="assets/img/programas2.png" width=50%/>
 </div>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-75" style="background:;">
+<slide class="" id="slide-76" style="background:;">
   <hgroup>
     <h2>Instalação</h2>
   </hgroup>
@@ -1863,7 +1888,7 @@ que todas as opções da aba &quot;Aplicativos Ubuntu&quot; estejam marcados</p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-76" style="background:;">
+<slide class="" id="slide-77" style="background:;">
   <hgroup>
     <h2>Instalação</h2>
   </hgroup>
@@ -1892,7 +1917,7 @@ opção de instalar</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-77" style="background:;">
+<slide class="" id="slide-78" style="background:;">
   <hgroup>
     <h2>Instalação</h2>
   </hgroup>
@@ -1922,7 +1947,7 @@ repositório conforme mostrado na página do CRAN</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-78" style="background:;">
+<slide class="" id="slide-79" style="background:;">
   <hgroup>
     <h2>R</h2>
   </hgroup>
@@ -1956,7 +1981,7 @@ no sistema)</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-79" style="background:;">
+<slide class="" id="slide-80" style="background:;">
   <hgroup>
     <h3>sudo</h3>
   </hgroup>
@@ -1971,7 +1996,7 @@ no sistema)</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-80" style="background:;">
+<slide class="" id="slide-81" style="background:;">
   <hgroup>
     <h2>R</h2>
   </hgroup>
@@ -2011,7 +2036,7 @@ ao repositório CRAN</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-81" style="background:;">
+<slide class="" id="slide-82" style="background:;">
   <hgroup>
     <h2>R</h2>
   </hgroup>
@@ -2041,14 +2066,14 @@ Programas&quot;</li>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-82" style="background:;">
+<slide class="" id="slide-83" style="background:;">
   <hgroup>
     <h2>Onde buscar ajuda</h2>
   </hgroup>
   <article data-timings="">
     <p>A comunidade Ubuntu/Linux já é muito grande e carrega o espírito do
 software livre de ajudar o vizinho. Por isso, uma busca no Google
-geralmente vai sanar suas dúvidas. Mesmo assim, se precisar perguntar
+geralmente vai sanar suas dúvidas. Mesmo assim, se precisar perguntar,
 alguns lugares são</p>
 
 <ul>
@@ -2061,7 +2086,7 @@ alguns lugares são</p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-83" style="background:;">
+<slide class="" id="slide-84" style="background:;">
   <hgroup>
     <h2>Material baseado (principalmente) em</h2>
   </hgroup>
@@ -2448,37 +2473,37 @@ alguns lugares são</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=62 title='Desafio'>
+        data-slide=62 title='Resolução do exercício 2'>
          62
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=63 title='Instalação do Ubuntu'>
+        data-slide=63 title='Desafio'>
          63
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=64 title='Antes:'>
+        data-slide=64 title='Instalação do Ubuntu'>
          64
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=65 title='Criando um pen-drive de inicialização'>
+        data-slide=65 title='Antes:'>
          65
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=66 title='Mas, antes de entrar na Matrix ...'>
+        data-slide=66 title='Criando um pen-drive de inicialização'>
          66
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=67 title='Tipos de partições'>
+        data-slide=67 title='Mas, antes de entrar na Matrix ...'>
          67
       </a>
     </li>
@@ -2496,19 +2521,19 @@ alguns lugares são</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=70 title='Sistemas de arquivos'>
+        data-slide=70 title='Tipos de partições'>
          70
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=71 title='Agora sim ...'>
+        data-slide=71 title='Sistemas de arquivos'>
          71
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=72 title='Instalação'>
+        data-slide=72 title='Agora sim ...'>
          72
       </a>
     </li>
@@ -2544,19 +2569,19 @@ alguns lugares são</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=78 title='R'>
+        data-slide=78 title='Instalação'>
          78
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=79 title='sudo'>
+        data-slide=79 title='R'>
          79
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=80 title='R'>
+        data-slide=80 title='sudo'>
          80
       </a>
     </li>
@@ -2568,14 +2593,20 @@ alguns lugares são</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=82 title='Onde buscar ajuda'>
+        data-slide=82 title='R'>
          82
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=83 title='Material baseado (principalmente) em'>
+        data-slide=83 title='Onde buscar ajuda'>
          83
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=84 title='Material baseado (principalmente) em'>
+         84
       </a>
     </li>
   </ul>

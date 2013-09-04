@@ -35,7 +35,7 @@ em {
 
 ### Melhor visualizado com [Chromium](http://www.chromium.org) (ou [Google Chrome](https://www.google.com/chrome))
 
-### Código-fonte disponível no [GitHub](https://github.com/fernandomayer/linux-intro/tree/gh-pages)
+### Código-fonte disponível no [GitHub](https://github.com/fernandomayer/linux-intro)
 
 ### Pressione "o" para visualizar miniaturas
 
@@ -556,10 +556,10 @@ Alguns dos principais diretórios são:
 ### Abra um terminal (na GUI):
 
 ```bash
-aluno@lce:~$
+aluno@ubuntu:~$
 ```
 - Tudo que está antes de `:` é o usuário logado (`aluno`) e o nome da
-  máquina (`lce`)
+  máquina (`ubuntu`)
 - Depois de `:` fica o diretório atual
 	- O símbolo `~` é um atalho (*alias*) para `/home/usuario`
 - Veja:
@@ -577,14 +577,14 @@ aluno@lce:~$
   abra a página de ajuda com o `man`. Por exemplo,
 
 ```bash
-aluno@lce:~$ man ls
+aluno@ubuntu:~$ man ls
 ```
 - Navegue com as setas e aperte `q` para sair e voltar ao terminal
 - Muitas opções podem ser passadas a um comando, sempre precedidas de
   `-`, e com um espaço. Por exemplo
 
 ```bash
-aluno@lce:~$ ls -l
+aluno@ubuntu:~$ ls -l
 ```
 - A opção (*flag*) `-l` faz com que a saída do `ls` seja em formato de
   lista
@@ -598,7 +598,7 @@ aluno@lce:~$ ls -l
 Mais opções podem ser passadas ao mesmo tempo. Por exemplo
 
 ```bash
-aluno@lce:~$ ls -lah
+aluno@ubuntu:~$ ls -lah
 ```
 Estas três opções juntas fazem com que o `ls`:
 - Retorne uma lista `l`
@@ -728,8 +728,8 @@ drwxr-xr-x 13 fernando fernando 4,0K Ago 27 22:29 Music
 Para mudar de diretório, use o comando `cd` (*change directory*)
 
 ```bash
-aluno@lce:~$ cd Documentos
-aluno@lce:~/Documentos$
+aluno@ubuntu:~$ cd Documentos
+aluno@ubuntu:~/Documentos$
 ```
 
 Note que `Documentos` é um diretório que está em `/home/aluno`. Como
@@ -737,12 +737,12 @@ você já está em `/home/aluno` não é necessário especificar todo o
 caminho novamente, mas esse comando é equivalente a
 
 ```bash
-aluno@lce:~$ cd /home/aluno/Documentos
+aluno@ubuntu:~$ cd /home/aluno/Documentos
 ```
 Ou
 
 ```bash
-aluno@lce:~$ cd ~/Documentos
+aluno@ubuntu:~$ cd ~/Documentos
 ```
 
 ---
@@ -774,14 +774,14 @@ ls
 ### Agora veja
 
 ```bash
-aluno@lce:~$ cd Documentos
-aluno@lce:~/Documentos$ pwd
+aluno@ubuntu:~$ cd Documentos
+aluno@ubuntu:~/Documentos$ pwd
 /home/aluno/Documentos
-aluno@lce:~/Documentos$ cd ..
-aluno@lce:~$ pwd
+aluno@ubuntu:~/Documentos$ cd ..
+aluno@ubuntu:~$ pwd
 /home/aluno
-aluno@lce:~$ cd -
-aluno@lce:~/Documentos$ pwd
+aluno@ubuntu:~$ cd -
+aluno@ubuntu:~/Documentos$ pwd
 /home/aluno/Documentos
 ```
 <br>
@@ -797,11 +797,11 @@ aluno@lce:~/Documentos$ pwd
 Para **criar** um diretório, use o comando `mkdir` (*make directory*)
 
 ```bash
-aluno@lce:~$ ls
-aluno@lce:~$ mkdir curso_linux
-aluno@lce:~$ ls
-aluno@lce:~$ cd curso_linux
-aluno@lce:~/curso_linux$ ls
+aluno@ubuntu:~$ ls
+aluno@ubuntu:~$ mkdir curso_linux
+aluno@ubuntu:~$ ls
+aluno@ubuntu:~$ cd curso_linux
+aluno@ubuntu:~/curso_linux$ ls
 ```
 
 ---
@@ -840,8 +840,8 @@ aluno@lce:~/curso_linux$ ls
 Para **remover** um diretório, use o comando `rm` (*remove*)
 
 ```bash
-aluno@lce:~$ rm -r curso_linux
-aluno@lce:~$ ls
+aluno@ubuntu:~$ rm -r curso_linux
+aluno@ubuntu:~$ ls
 ```
 
 - A opção `-r` é necessária para remover recursivamente um diretório
@@ -860,10 +860,10 @@ aluno@lce:~$ ls
 Para **criar** um arquivo de texto, podemos usar o gedit
 
 ```bash
-aluno@lce:~$ mkdir curso_linux
-aluno@lce:~$ cd curso_linux/
-aluno@lce:~/curso_linux$ ls
-aluno@lce:~/curso_linux$ gedit arquivo.txt &
+aluno@ubuntu:~$ mkdir curso_linux
+aluno@ubuntu:~$ cd curso_linux/
+aluno@ubuntu:~/curso_linux$ ls
+aluno@ubuntu:~/curso_linux$ gedit arquivo.txt &
 ```
 - Escreva alguma coisa, salve e feche o programa
 - Note o `&` no final do comando: ele serve para executar e retornar
@@ -889,7 +889,7 @@ Por exemplo, para copiar `arquivo.txt` de `/home/aluno/curso_linux` para
 `/home/aluno/Documentos`
 
 ```bash
-aluno@lce:~/curso_linux$ cp arquivo.txt /home/aluno/Documentos
+aluno@ubuntu:~/curso_linux$ cp arquivo.txt /home/aluno/Documentos
 ```
 Note que qualquer um destes comandos faria a mesma coisa
 
@@ -907,16 +907,16 @@ cp arquivo.txt ../Documentos
 Para copiar um arquivo de um diretório para o atual, por exemplo
 
 ```bash
-aluno@lce:~/curso_linux$ cd ../Documentos
-aluno@lce:~/Documentos$ cp ~/curso_linux/arquivo.txt .
+aluno@ubuntu:~/curso_linux$ cd ../Documentos
+aluno@ubuntu:~/Documentos$ cp ~/curso_linux/arquivo.txt .
 ```
 - Note que o ponto `.` no final representa o diretório atual
 
 Para copiar **todos** os arquivos de um diretório para outro
 
 ```bash
-aluno@lce:~/Documentos$ cd
-aluno@lce:~$ cp curso_linux/* Downloads
+aluno@ubuntu:~/Documentos$ cd
+aluno@ubuntu:~$ cp curso_linux/* Downloads
 ```
 - O asterisco `*` dentro de um diretório significa "tudo" que estiver
   dentro dele
@@ -931,14 +931,14 @@ Para **mover** um arquivo entre diretórios usamos o `mv` (*move*), que
 possui a mesma sintaxe e funciona da mesma forma que o `cp`. Por exemplo
 
 ```bash
-aluno@lce:~$ mv curso_linux/arquivo.txt .
+aluno@ubuntu:~$ mv curso_linux/arquivo.txt .
 ```
 O comando `mv` também serve para **renomear** um arquivo, se for
 aplicado no mesmo diretório. Por exemplo, para renomear `arquivo.txt`
 para `arquivo_curso.txt`
 
 ```bash
-aluno@lce:~$ mv arquivo.txt arquivo_curso.txt
+aluno@ubuntu:~$ mv arquivo.txt arquivo_curso.txt
 ```
 
 ---
@@ -950,14 +950,14 @@ aluno@lce:~$ mv arquivo.txt arquivo_curso.txt
 Para **remover** um arquivo qualquer, usamos o `rm` novamente
 
 ```bash
-aluno@lce:~$ rm arquivo_curso.txt
+aluno@ubuntu:~$ rm arquivo_curso.txt
 ```
 
 Para remover todos os arquivos de um diretório, mas sem remover o
 diretório em si também usamos o `*`
 
 ```bash
-aluno@lce:~$ rm curso_linux/*
+aluno@ubuntu:~$ rm curso_linux/*
 ```
 <div class="alert alert-info">
 <p>Novamente cuidado! O rm vai remover tudo sem nenhum aviso e sem
@@ -972,13 +972,13 @@ aluno@lce:~$ rm curso_linux/*
 
 ```bash
 # mostra o tipo de arquivo, codificação de carecteres, ...
-aluno@lce:~$ file arquivo.txt 
+aluno@ubuntu:~$ file arquivo.txt 
 # imprime na tela todo o conteúdo do arquivo
-aluno@lce:~$ cat arquivo.txt 
+aluno@ubuntu:~$ cat arquivo.txt 
 # imprime as 10 primeiras linhas
-aluno@lce:~$ head arquivo.txt 
+aluno@ubuntu:~$ head arquivo.txt 
 # imprime as 10 últimas linhas
-aluno@lce:~$ tail arquivo.txt 
+aluno@ubuntu:~$ tail arquivo.txt 
 ```
 
 ---
@@ -999,6 +999,27 @@ para conferir o local e `ls` para listar o conteúdo
 	- Mova `delete.txt` para o diretório `curso_linux`
 	- Remova o diretório `curso_linux`
 	- O que sobrou no diretório com seu nome?
+
+---
+
+### Resolução do exercício 2
+
+Assumindo que você está em `/home/aluno` a sequência de comandos seria 
+
+```bash
+mkdir fernando
+cd fernando
+mkdir curso_linux
+gedit teste.txt &
+gedit .oculto.txt &
+cp teste.txt curso_linux
+cp teste.txt ~/Documentos
+mv teste.txt delete.txt
+mv delete.txt curso_linux
+rm -r curso_linux
+ls -la
+# deve sobrar apenas .oculto.txt
+```
 
 ---
 
@@ -1187,10 +1208,10 @@ Dessa forma, se um disco possui 1 partição primária, 1 estendida, e
 ### O que fazer após a instalação
 
 Entre nas configurações e "Programas e atualizações". Certifique-se
-que todas as opções da aba "Aplicativos Ubuntu" estejam marcados
+que todas as opções da aba "Outros programas" estejam marcados
 
 <div class="centered">
-<img src="assets/img/programas.png" width=50%/>
+<img src="assets/img/programas2.png" width=50%/>
 </div>
 
 ---
@@ -1331,7 +1352,7 @@ editores como
 
 A comunidade Ubuntu/Linux já é muito grande e carrega o espírito do
 software livre de ajudar o vizinho. Por isso, uma busca no Google
-geralmente vai sanar suas dúvidas. Mesmo assim, se precisar perguntar
+geralmente vai sanar suas dúvidas. Mesmo assim, se precisar perguntar,
 alguns lugares são
 
 - [Ask Ubuntu](http://askubuntu.com/)
