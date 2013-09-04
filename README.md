@@ -5,6 +5,12 @@ ESALQ/USP, 02 e 03 de setembro, 2013.
 
 Este branch é o repositório dos slides utilizados no curso.
 
+Para visualizar os slides acesse
+[http://fernandomayer.github.io/linux-intro](http://fernandomayer.github.io/linux-intro)
+
+Uma versão em PDF (com perda de formatação) está disponível em
+[linux-intro_slides.pdf](linux-intro_slides.pdf).
+
 Os slides foram criados com o pacote [Slidify](http://www.slidify.org) do R. É
 necessário instalar a versão em desenvolvimento deste pacote disponível
 no [GitHub](https://github.com/ramnathv/slidify/tree/dev):
